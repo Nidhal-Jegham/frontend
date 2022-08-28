@@ -1,0 +1,164 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f3f8fa;
+}
+#articles {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+#articles {
+  background: linear-gradient(
+      to right,
+      rgba(30, 67, 86, 0.8),
+      rgba(30, 67, 86, 0.6)
+    ),
+    url("../../public/assets/img/timun magazine.jpg") center top no-repeat;
+  max-width: 100vw;
+  max-height: auto;
+  background-size: cover;
+}
+#articles h2 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 48px;
+  font-weight: 500;
+}
+#articles h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 400;
+}
+#articles p {
+  color: #fff;
+}
+#articles .btn-get-started {
+  cursor: pointer;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #68a4c4;
+}
+#articles .btn-get-started:hover {
+  background: #68a4c4;
+  color: #fff;
+  text-decoration: none;
+}
+
+.magazine {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 8vh;
+}
+.magazine .magazine {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  border: 0;
+  max-width: 100%;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+.title h3 {
+  color: #183341;
+
+  margin-top: 10vh;
+  font-weight: 400;
+  text-align: center;
+  font-size: 45px;
+}
+.title h3:after {
+  position: relative;
+  left: 40%;
+  width: 20vw;
+  content: " ";
+  display: block;
+  border: 0.5px solid #68a4c4;
+}
+
+.magazine {
+  padding: 40px 0 20px 0;
+}
+.magazine .entry {
+  padding: 30px;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.magazine .entry .entry-img {
+  max-height: 440px;
+  margin: -30px -30px 20px -30px;
+  overflow: hidden;
+}
+.magazine .entry .entry-title {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.magazine .entry .entry-title a {
+  color: #1e4356;
+  transition: 0.3s;
+}
+.magazine .entry .entry-title a:hover {
+  color: #68a4c4;
+}
+.magazine .entry .entry-meta {
+  margin-bottom: 15px;
+  color: #72afce;
+}
+.magazine .entry .entry-meta ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.magazine .entry .entry-meta ul li + li {
+  padding-left: 20px;
+}
+.magazine .entry .entry-meta i {
+  font-size: 16px;
+  margin-right: 8px;
+  line-height: 0;
+}
+.magazine .entry .entry-meta li span {
+  color: #777777;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 1;
+}
+.magazine .entry .entry-content p {
+  line-height: 24px;
+}
+.magazine .entry .entry-content .read-more {
+  -moz-text-align-last: right;
+  text-align-last: right;
+}
+.magazine .entry .entry-content .read-more a {
+  display: inline-block;
+  background: #68a4c4;
+  color: #fff;
+  padding: 6px 20px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+.magazine .entry .entry-content .read-more a:hover {
+  background: #7aafcb;
+}

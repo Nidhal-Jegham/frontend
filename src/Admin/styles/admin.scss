@@ -1,0 +1,27 @@
+.component {
+  background-color: bisque;
+}
+
+.Flex {
+  background-color: rgb(255, 255, 255);
+
+  margin-left: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  margin-bottom: 50px;
+  input {
+    width: 80%;
+  }
+}
+.Navbar {
+  display: flex;
+  background: black;
+
+  .link {
+    margin-right: 100px;
+    background: black;
+  }
+}
