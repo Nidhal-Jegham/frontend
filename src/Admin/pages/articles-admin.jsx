@@ -21,7 +21,6 @@ function ArticleAdmin({ token }) {
       articles: e.target.articles.value.split("/"),
       author: e.target.author.value,
       content: e.target.content.value,
-      img: e.target.img.value,
       date: e.target.date.value,
     };
     console.log("gg", formData);
@@ -46,7 +45,6 @@ function ArticleAdmin({ token }) {
       articles: e.target.articles.value.split("/"),
       author: e.target.author.value,
       content: e.target.content.value,
-      img: e.target.img.value,
       date: e.target.date.value,
     };
     fetch("http://localhost:3200/admin/articles", {
@@ -87,7 +85,6 @@ function ArticleAdmin({ token }) {
               <h6>articles: {article.articles}</h6>
               <h6>author: {article.author}</h6>
               <h6>content: {article.content}</h6>
-              <h6>img: {article.img}</h6>
               <h6>date: {article.date}</h6>
               <button onClick={() => deleteData(article)}>Delete</button>
             </div>
@@ -96,7 +93,6 @@ function ArticleAdmin({ token }) {
               <input placeholder="articles" type="text" name="articles"></input>
               <input placeholder="author" type="text" name="author"></input>
               <input placeholder="content" type="text" name="content"></input>
-              <input placeholder="img" type="text" name="img"></input>
               <input placeholder="date" type="text" name="date"></input>
               <input type="submit"></input>
             </form>
@@ -108,7 +104,6 @@ function ArticleAdmin({ token }) {
         <input type="text" placeholder="articles" name="articles"></input>
         <input type="text" placeholder="author" name="author"></input>
         <input type="text" placeholder="content" name="content"></input>
-        <input type="text" placeholder="img" name="img"></input>
         <input type="text" placeholder="date" name="date"></input>
 
         <input type="submit"></input>

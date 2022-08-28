@@ -79,11 +79,9 @@ function SGuidesAdmin() {
           <div className="Flex">
             <div>
               <h6>title: {studyguide.title}</h6>
-
               <h6>organ: {studyguide.organ}</h6>
               <h6>content: {studyguide.content}</h6>
               <h6>date: {studyguide.date}</h6>
-
               <h6>full: {studyguide.full}</h6>
               <h6>event: {studyguide.event}</h6>
 
@@ -91,7 +89,6 @@ function SGuidesAdmin() {
             </div>
             <form className="Flex" onSubmit={(e) => updateData(e, studyguide)}>
               <input type="text" placeholder="title" name="title"></input>
-
               <input type="text" placeholder="organ" name="organ"></input>
               <input type="text" placeholder="content" name="content"></input>
               <input type="text" placeholder="date" name="date"></input>

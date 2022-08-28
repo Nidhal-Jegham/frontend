@@ -3,7 +3,6 @@ import React, { useState } from "react";
 const Event = (props) => {
   const date = new Date(props.event.date).toString().substring(0, 15);
   const [aftermovie, setafterMovie] = useState(false);
-  console.log(props.event.sponsors);
   return (
     <div className="col-md-6 d-flex align-items-stretch">
       <div class="card">

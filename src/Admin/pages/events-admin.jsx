@@ -22,7 +22,6 @@ function EventAdmin() {
       cover: e.target.cover.value,
       date: e.target.date.value,
       status: e.target.status.value,
-      mandate: e.target.mandate.value,
       aftermovie: e.target.aftermovie.value,
       drive: e.target.drive.value,
       sponsors: e.target.sponsors.value.split("/"),
@@ -45,9 +44,7 @@ function EventAdmin() {
       cover: e.target.cover.value,
       date: e.target.date.value,
       status: e.target.status.value,
-      mandate: e.target.mandate.value,
       aftermovie: e.target.aftermovie.value,
-
       drive: e.target.drive.value,
       sponsors: e.target.sponsors.value.split("/"),
       description: e.target.description.value,
@@ -88,9 +85,7 @@ function EventAdmin() {
               <h6>cover: {event.cover}</h6>
               <h6>date: {event.date}</h6>
               <h6>status: {event.status}</h6>
-              <h6>Pictures:{event.mandate}</h6>
               <h6>AfterMovie:{event.AfterMovie}</h6>
-
               <h6>drive: {event.drive}</h6>
               <h6>sponsors: {event.sponsors}</h6>
               <h6>description: {event.description}</h6>
@@ -101,13 +96,11 @@ function EventAdmin() {
               <input type="text" placeholder="cover" name="cover"></input>
               <input type="text" placeholder="date" name="date"></input>
               <input type="text" placeholder="status" name="status"></input>
-              <input type="text" placeholder="pictures" name="mandate"></input>
               <input
                 type="text"
                 placeholder="aftermovie"
                 name="aftermovie"
               ></input>
-
               <input type="text" placeholder="drive" name="drive"></input>
               <input type="text" placeholder="sponsors" name="sponsors"></input>
               <input
@@ -126,12 +119,10 @@ function EventAdmin() {
         <input type="text" placeholder="cover" name="cover"></input>
         <input type="text" placeholder="date" name="date"></input>
         <input type="text" placeholder="status" name="status"></input>
-        <input type="text" placeholder="pictures" name="mandate"></input>
         <input type="text" placeholder="drive" name="drive"></input>
         <input type="text" placeholder="aftermovie" name="aftermovie"></input>
         <input type="text" placeholder="sponsors" name="sponsors"></input>
         <input type="text" placeholder="description" name="description"></input>
-
         <input type="submit"></input>
       </form>
     </div>

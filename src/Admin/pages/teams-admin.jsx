@@ -46,7 +46,6 @@ function TeamsAdmin() {
       position: e.target.position.value,
       description: e.target.description.value,
       src: e.target.src.value,
-
       accounts: {
         facebook: e.target.facebook.value,
         insta: e.target.insta.value,
