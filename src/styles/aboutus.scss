@@ -126,7 +126,7 @@
 
   .icon-box {
     background-color: #0000f8;
-    height: 50vh;
+    height: 500vh;
     max-height: 60vh;
     border-radius: 10%;
     display: flex;
@@ -183,15 +183,20 @@
 .values .icon {
   margin: 0 auto 20px auto;
   padding-top: 17px;
+  padding-bottom: 17px;
+
   display: inline-block;
   text-align: center;
   border-radius: 50%;
   width: 72px;
+  background: #d9e3e9;
+
   height: 72px;
 }
 .values .icon i {
   font-size: 36px;
   line-height: 1;
+  color: #2282ff;
 }
 .values .title {
   font-weight: 700;
@@ -208,13 +213,6 @@
 .values .icon-box:hover {
   border: 1px solid black;
   border-color: #2282ff;
-}
-
-.values .icon-box-blue .icon {
-  background: #edecec;
-}
-.values .icon-box-blue .icon i {
-  color: #2282ff;
 }
 
 //Team

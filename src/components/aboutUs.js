@@ -18,7 +18,7 @@ const AboutUs = ({ team, events, loading }) => {
           <div className="d-flex justify-content-center">
             <div class="row d-flex align-items-center">
               <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-                <div class="icon-box icon-box-blue">
+                <div class="icon-box ">
                   <div class="icon">
                     <i class="bx bx-world"></i>
                   </div>
