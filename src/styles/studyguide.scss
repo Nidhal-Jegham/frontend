@@ -22,7 +22,7 @@ body {
 #studyguides h2 {
   color: #fff;
   margin-bottom: 15px;
-  font-size: 56px;
+  font-size: 55px;
   font-weight: 500;
 }
 
@@ -129,11 +129,7 @@ body {
   color: #fff;
   text-decoration: none;
 }
-@media (max-width: 575px) {
-  #studyguides h2 {
-    font-size: 30px;
-  }
-}
+
 .row {
   width: 90%;
   display: flex;
