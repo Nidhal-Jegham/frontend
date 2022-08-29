@@ -26,8 +26,8 @@ const AboutUs = ({ team, events, loading }) => {
                     <a href="">Diplomacy</a>
                   </h4>
                   <p class="description">
-                    Learn how to intrigue people, to convey messages
-                    diplomatically, and to be composed under pressure.
+                    We value the art of tact and diplomacy and aim to perfect
+                    the negotiation and communication skills of students.
                   </p>
                 </div>
               </div>
@@ -41,9 +41,9 @@ const AboutUs = ({ team, events, loading }) => {
                     <a href="">Innovation</a>
                   </h4>
                   <p class="description">
-                    we aim to develop a common sense on innovation in order to
-                    develop the critical and solution oriented thinking to
-                    achieve our goals.
+                    We aim to develop a common sense on innovation in order to
+                    develop the critical and solution oriented mindsets of
+                    students.
                   </p>
                 </div>
               </div>
@@ -54,11 +54,12 @@ const AboutUs = ({ team, events, loading }) => {
                     <i class="bx bx-star"></i>
                   </div>
                   <h4 class="title">
-                    <a href="">Integrity</a>
+                    <a href="">Cooperation</a>
                   </h4>
                   <p class="description">
-                    Develop a moral compass alongside being ethical and
-                    fact-finder.
+                    We value teamwork and aim to develop team players in order
+                    to exchange ideas, propel forward together and to align the
+                    efforts with our partners.{" "}
                   </p>
                 </div>
               </div>
@@ -72,9 +73,8 @@ const AboutUs = ({ team, events, loading }) => {
                     <a href="">Leadership</a>
                   </h4>
                   <p class="description">
-                    we aim to develop a common sense on innovation in order to
-                    develop the critical and solution oriented thinking to
-                    achieve our goals.
+                    We aim to develop future leaders with numerous fundamental
+                    skills that will pave the way for their success.
                   </p>
                 </div>
               </div>
@@ -100,8 +100,8 @@ const AboutUs = ({ team, events, loading }) => {
                 TIMUN TBS is a student organization organization under the
                 direct supervision supervision of an active community operating
                 under the instructions of the UN. Our club seeks to strengthen
-                the skills of students such public speaking, academic knowledge,
-                international international relation, and leadership.
+                the skills of students such as public speaking, academic
+                knowledge, international relations, and leadership.
               </p>
 
               <ul>
@@ -131,7 +131,7 @@ const AboutUs = ({ team, events, loading }) => {
               </a>
               <p className="fst-italic">
                 To provide students with the fundamental skills to integrate and
-                Lead the international Community when facing global challenges.
+                lead the international community when facing global challenges.
               </p>
 
               <ul>
@@ -155,9 +155,10 @@ const AboutUs = ({ team, events, loading }) => {
                 <h3>Our Mission</h3>
               </a>
               <p className="fst-italic">
-                Create a healthy environment for students to propel forward and
-                unleash their potential alongside maintaining a sense of
-                solidarity and cooperation in the entity.
+                Create a healthy environment for students to develop their
+                diplomatic and leadership skills and unleash their potential
+                alongside maintaining a sense of solidarity and cooperation
+                inside the entity.
               </p>
 
               <ul>
