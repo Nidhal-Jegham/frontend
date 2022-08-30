@@ -4,7 +4,7 @@ import "../styles/admin.scss";
 function ArticleAdmin({ token }) {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3200/articles")
+    fetch(`${process.env.REACT_APP_API_URL}/articles`)
       .then((res) => res.json())
       .then((data) => {
         setArticles(data);
@@ -25,7 +25,7 @@ function ArticleAdmin({ token }) {
     };
     console.log("gg", formData);
 
-    fetch("http://localhost:3200/admin/articles", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/articles`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
@@ -47,7 +47,7 @@ function ArticleAdmin({ token }) {
       content: e.target.content.value,
       date: e.target.date.value,
     };
-    fetch("http://localhost:3200/admin/articles", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/articles`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -62,7 +62,7 @@ function ArticleAdmin({ token }) {
     const toDelete = {
       _id: article._id,
     };
-    fetch("http://localhost:3200/admin/articles", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/articles`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",

@@ -4,7 +4,7 @@ import "../styles/admin.scss";
 function EventAdmin() {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3200/events")
+    fetch(`${process.env.REACT_APP_API_URL}/events`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -27,7 +27,7 @@ function EventAdmin() {
       sponsors: e.target.sponsors.value.split("/"),
       description: e.target.description.value,
     };
-    fetch("http://localhost:3200/admin/events", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/events`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
@@ -49,7 +49,7 @@ function EventAdmin() {
       sponsors: e.target.sponsors.value.split("/"),
       description: e.target.description.value,
     };
-    fetch("http://localhost:3200/admin/events", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/events`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -64,7 +64,7 @@ function EventAdmin() {
     const toDelete = {
       _id: event._id,
     };
-    fetch("http://localhost:3200/admin/events", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/events`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",

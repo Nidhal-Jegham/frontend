@@ -21,7 +21,7 @@ const CountDown = ({ event, setCurrent }) => {
       if (distance < 0) {
         setCurrent(false);
         clearInterval(interval);
-        fetch("http://localhost:3200/events/countend", {
+        fetch(`${process.env.REACT_APP_API_URL}/events/countend`, {
           method: "PUT",
           headers: {
             "Content-type": "application/json",

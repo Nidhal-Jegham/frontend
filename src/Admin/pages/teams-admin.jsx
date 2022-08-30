@@ -4,7 +4,7 @@ import "../styles/admin.scss";
 function TeamsAdmin() {
   const [teams, setTeams] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3200/home/teams")
+    fetch(`${process.env.REACT_APP_API_URL}/home/teams`)
       .then((res) => res.json())
       .then((data) => {
         setTeams(data);
@@ -27,7 +27,7 @@ function TeamsAdmin() {
         linkedin: e.target.linkedin.value,
       },
     };
-    fetch("http://localhost:3200/admin/home/teams", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/home/teams`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
@@ -52,7 +52,7 @@ function TeamsAdmin() {
         linkedin: e.target.linkedin.value,
       },
     };
-    fetch("http://localhost:3200/admin/home/teams", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/home/teams`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -67,7 +67,7 @@ function TeamsAdmin() {
     const toDelete = {
       _id: team._id,
     };
-    fetch("http://localhost:3200/admin/home/teams", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/home/teams`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",

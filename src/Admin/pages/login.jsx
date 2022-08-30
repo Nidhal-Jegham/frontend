@@ -4,7 +4,7 @@ const Admin = ({ setToken }) => {
   const nav = useNavigate();
   const validateLogin = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3200/admin/login", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/login`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
