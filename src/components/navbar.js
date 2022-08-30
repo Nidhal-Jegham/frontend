@@ -36,7 +36,6 @@ const Navbar = (props) => {
 
   useEffect(() => {
     changeBackground();
-    // adding the event when scroll change background
     window.addEventListener("scroll", changeBackground);
   });
   return (
@@ -88,7 +87,7 @@ const Navbar = (props) => {
               </li>
             </ul>
             <i
-              onClick={() => (setMobile(!mobile), console.log(mobile))}
+              onClick={() => setMobile(!mobile)}
               className={
                 mobile
                   ? "bi bi-list mobile-nav-toggle"
