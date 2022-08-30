@@ -14,13 +14,13 @@ const Home = ({ setLoading, loading }) => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://timunbackend.herokuapp.com/home/teams")
+    fetch(`${process.env.REACT_APP_API_URL}/home/teams`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
         setTeam(data);
       });
-    fetch("https://timunbackend.herokuapp.com/events")
+    fetch(`${process.env.REACT_APP_API_URL}/events`)
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);

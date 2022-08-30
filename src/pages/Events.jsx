@@ -16,7 +16,7 @@ function Events({ loading, setLoading }) {
   useEffect(() => {
     setSearchEvent("");
     setLoading(true);
-    fetch("https://timunbackend.herokuapp.com/events")
+    fetch(`${process.env.REACT_APP_API_URL}/events`)
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);

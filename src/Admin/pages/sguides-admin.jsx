@@ -4,7 +4,7 @@ import "../styles/admin.scss";
 function SGuidesAdmin() {
   const [sGuides, setSGuides] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3200/sguides")
+    fetch(`${process.env.REACT_APP_API_URL}/sguides`)
       .then((res) => res.json())
       .then((data) => {
         setSGuides(data);
@@ -23,7 +23,7 @@ function SGuidesAdmin() {
       full: e.target.full.value,
       event: e.target.event.value,
     };
-    fetch("http://localhost:3200/admin/sguides", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/sguides`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
@@ -45,7 +45,7 @@ function SGuidesAdmin() {
       full: e.target.full.value,
       event: e.target.event.value,
     };
-    fetch("http://localhost:3200/admin/sguides", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/sguides`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -61,7 +61,7 @@ function SGuidesAdmin() {
     const toDelete = {
       _id: studyguide._id,
     };
-    fetch("http://localhost:3200/admin/sguides", {
+    fetch(`${process.env.REACT_APP_API_URL}/admin/sguides`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",

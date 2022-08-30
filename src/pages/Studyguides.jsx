@@ -45,7 +45,7 @@ function SGuides({ loading, setLoading }) {
     setEventName("");
     setLanguage("");
     setSGuidePage(1);
-    fetch("https://timunbackend.herokuapp.com/sguides")
+    fetch(`${process.env.REACT_APP_API_URL}/sguides`)
       .then((res) => res.json())
       .then((data) => {
         setSGuides(data);
@@ -53,7 +53,7 @@ function SGuides({ loading, setLoading }) {
         setLoading(false);
       })
       .catch((err) => console.log(err));
-    fetch("https://timunbackend.herokuapp.com/events")
+    fetch(`${process.env.REACT_APP_API_URL}/events`)
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);
