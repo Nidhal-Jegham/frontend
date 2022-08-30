@@ -14,14 +14,13 @@ const Home = ({ setLoading, loading, setMobile, mobile }) => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`${process.env.REACT_APP_API_URL}/home/teams`)
+    fetch("http://timunbackend-env.eba-dv2jmrw7.eu-central-1.elasticbeanstalk.com/home/teams")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
         setTeam(data);
       });
-    fetch(`${process.env.REACT_APP_API_URL}/events`)
-      .then((res) => res.json())
+fetch("http://timunbackend-env.eba-dv2jmrw7.eu-central-1.elasticbeanstalk.com/events")      .then((res) => res.json())
       .then((data) => {
         setEvents(data);
         setLoading(false);
