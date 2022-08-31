@@ -45,8 +45,8 @@ function App() {
           path="events"
           element={<Events loading={loading} setLoading={setLoading} />}
         />
-        <Route path="*" setLoading={setLoading} element={<NotFound />} />
       </Route>
+      <Route path="/*" setLoading={setLoading} element={<NotFound />} />
       <Route path="/fanta" element={<LayoutAdmin />}>
         <Route index element={<Login />} />
         <Route path="home" element={<Admin />} />
@@ -58,5 +58,4 @@ function App() {
     </Routes>
   );
 }
-
 export default App;
