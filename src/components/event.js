@@ -11,7 +11,7 @@ const Event = (props) => {
         </div>
         <div class="card-body">
           <h5 class="card-title">
-            <a href="#">{props.event.name}</a>
+            <a href={props.event.drive}>{props.event.name}</a>
           </h5>
           <p class="card-text">{props.event.description}</p>
 
