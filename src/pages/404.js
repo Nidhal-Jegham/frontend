@@ -4,6 +4,11 @@ const NotFound = ({ setLoading }) => {
   useEffect(() => {
     setLoading(false);
   });
+  const Redirect = () => {
+    setTimeout(() => {
+      useNavigate("/");
+    }, 5000);
+  };
   return (
     <div>
       <img src="/assets/img/Logo.png"></img>
