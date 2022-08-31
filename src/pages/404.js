@@ -1,4 +1,3 @@
-import { useEffect, useNavigate } from "react";
 import { Link } from "react-router-dom";
 import React from "react";
 import "../styles/404.scss";
