@@ -1,19 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useNavigate } from "react";
+import { Link } from "react-router-dom";
 import React from "react";
+import "../styles/404.scss";
 const NotFound = ({ setLoading }) => {
-  useEffect(() => {
-    setLoading(false);
-  });
   const Redirect = () => {
-    setTimeout(() => {
-      useNavigate("/");
-    }, 5000);
+    useNavigate("/");
   };
+
   return (
-    <div>
+    <div className="notfound ">
       <img src="/assets/img/Logo.png"></img>
       <h3>Page Not Found</h3>
-      <h4>Redirecting in 5 seconds</h4>
+      <div className="link">
+        {" "}
+        <Link to="/">Go to Home</Link>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,20 @@
+.notfound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  img {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  .link {
+    padding: 10px;
+    font-size: 40px;
+  }
+}
