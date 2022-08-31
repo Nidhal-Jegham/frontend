@@ -46,7 +46,7 @@ function App() {
           element={<Events loading={loading} setLoading={setLoading} />}
         />
       </Route>
-      <Route path="/*" setLoading={setLoading} element={<NotFound />} />
+      <Route path="/*" element={<NotFound />} />
       <Route path="/fanta" element={<LayoutAdmin />}>
         <Route index element={<Login />} />
         <Route path="home" element={<Admin />} />

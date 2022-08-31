@@ -1,8 +1,8 @@
-import { useEffect, useNavigate } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import React from "react";
 import "../styles/404.scss";
-const NotFound = ({ setLoading }) => {
+const NotFound = () => {
   const Redirect = () => {
     useNavigate("/");
   };
