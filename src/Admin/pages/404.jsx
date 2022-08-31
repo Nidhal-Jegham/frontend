@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useNavigate } from "react";
 const NotFound = () => {
+  const Redirect = () => {
+    setTimeout(() => {
+      useNavigate("/");
+    }, 5000);
+  };
   return (
-    <div>
+    <div onLoad={() => Redirect()}>
       <img>
         <img className="loading" src="/assets/img/Logo.png"></img>
       </img>

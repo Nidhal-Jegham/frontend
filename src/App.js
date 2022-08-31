@@ -54,7 +54,7 @@ function App() {
         <Route path="sguides" element={<SGuidesAdmin />} />
         <Route path="teams" element={<TeamsAdmin />} />
       </Route>
-      {<Route path="*" element={<NotFound />} />}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
