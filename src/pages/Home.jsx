@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import AboutUs from "../components/aboutUs";
-
 import "../styles/home.scss";
 
 const Home = ({ setLoading, loading }) => {
