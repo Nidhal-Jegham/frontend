@@ -20,6 +20,7 @@ function ArticleAdmin({ token }) {
       title: e.target.title.value,
       articles: e.target.articles.value.split("/"),
       author: e.target.author.value,
+      description: e.target.author.description,
       content: e.target.content.value,
       date: e.target.date.value,
     };
@@ -85,6 +86,8 @@ function ArticleAdmin({ token }) {
               <h6>articles: {article.articles}</h6>
               <h6>author: {article.author}</h6>
               <h6>content: {article.content}</h6>
+              <h6>Description: {article.description}</h6>
+
               <h6>date: {article.date}</h6>
               <button onClick={() => deleteData(article)}>Delete</button>
             </div>
@@ -93,6 +96,12 @@ function ArticleAdmin({ token }) {
               <input placeholder="articles" type="text" name="articles"></input>
               <input placeholder="author" type="text" name="author"></input>
               <input placeholder="content" type="text" name="content"></input>
+              <input
+                placeholder="description"
+                type="text"
+                name="description"
+              ></input>
+
               <input placeholder="date" type="text" name="date"></input>
               <input type="submit"></input>
             </form>
@@ -104,8 +113,8 @@ function ArticleAdmin({ token }) {
         <input type="text" placeholder="articles" name="articles"></input>
         <input type="text" placeholder="author" name="author"></input>
         <input type="text" placeholder="content" name="content"></input>
+        <input placeholder="description" type="text" name="description"></input>
         <input type="text" placeholder="date" name="date"></input>
-
         <input type="submit"></input>
       </form>
     </div>

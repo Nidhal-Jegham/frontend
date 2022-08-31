@@ -30,17 +30,7 @@ const Article = ({ article, subjects }) => {
           </ul>
         </div>
         <div className="entry-content">
-          <p>
-            Due to the COVID-19 wave, we all got -more or less- familiar with
-            the medicine development process. However, the still ongoing rumors
-            about this vaccine’s side effects, or the other’s inefficacy have
-            proven that a drug’s effect can be misleading and unpredicted. This
-            is exactly the case for Oslo Accords, this controversial series of
-            interim agreements regarding the status of the West Bank & Gaza
-            Strip, negotiated between the Palestine Liberation Organization
-            (PLO) - the representative body of the Palestinian people- and
-            Israel in 1993.
-          </p>
+          <p>{article.description}</p>
           <div className="read-more">
             <a href={article.content} target="_blank">
               Read More
