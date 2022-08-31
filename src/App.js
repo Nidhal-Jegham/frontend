@@ -12,7 +12,6 @@ import Layout from "./pages/Layout";
 import SGuides from "./pages/Studyguides";
 import Articles from "./pages/Articles";
 import Events from "./pages/Events";
-// import NotFound from "./pages/NotFound";
 
 //Admin Pages
 import Login from "./Admin/pages/login";
@@ -22,6 +21,7 @@ import LayoutAdmin from "./Admin/pages/layout-admin";
 import SGuidesAdmin from "./Admin/pages/sguides-admin";
 import EventsAdmin from "./Admin/pages/events-admin";
 import ArticleAdmin from "./Admin/pages/articles-admin";
+import NotFound from "./Admin/pages/404";
 
 function App() {
   const [loading, setLoading] = useState(true);
