@@ -97,11 +97,11 @@ const AboutUs = ({ team, events, loading }) => {
               </a>
 
               <p className="fst-italic">
-                TIMUN TBS is a student organization organization under the
-                direct supervision supervision of an active community operating
-                under the instructions of the UN. Our club seeks to strengthen
-                the skills of students such as public speaking, academic
-                knowledge, international relations, and leadership.
+                TIMUN TBS is a student organization under the direct supervision
+                of an active community operating under the instructions of the
+                UN. Our club seeks to strengthen the skills of students such as
+                public speaking, academic knowledge, international relations,
+                and leadership.
               </p>
 
               <ul>
@@ -187,9 +187,9 @@ const AboutUs = ({ team, events, loading }) => {
               <p className="fst-italic">
                 For those who are interested in the realm of diplomacy, eager to
                 test their public speaking and negotiation skills, want to
-                expand their academic knowledge and meet interesting people.
-                Coming to our events is the perfect opportunity for you to
-                experience that and more
+                expand their academic knowledge and meet interesting people;
+                coming to our events is the perfect opportunity for you to
+                experience that and more.
               </p>
 
               <ul>
@@ -251,8 +251,6 @@ const AboutUs = ({ team, events, loading }) => {
           </div>
         </div>
       </section>
-      {/* End Features Section */}
-      {/* End #main */}
 
       <hr></hr>
       <section class="breadcrumbs">
