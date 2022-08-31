@@ -3,7 +3,7 @@ import AboutUs from "../components/aboutUs";
 
 import "../styles/home.scss";
 
-const Home = ({ setLoading, loading, setMobile, mobile }) => {
+const Home = ({ setLoading, loading }) => {
   const AboutUsRef = useRef();
 
   const LearnMore = () => {
