@@ -21,7 +21,7 @@ import LayoutAdmin from "./Admin/pages/layout-admin";
 import SGuidesAdmin from "./Admin/pages/sguides-admin";
 import EventsAdmin from "./Admin/pages/events-admin";
 import ArticleAdmin from "./Admin/pages/articles-admin";
-import NotFound from "./Admin/pages/404";
+import NotFound from "./pages/404";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -45,6 +45,7 @@ function App() {
           path="events"
           element={<Events loading={loading} setLoading={setLoading} />}
         />
+        <Route path="*" setLoading={setLoading} element={<NotFound />} />
       </Route>
       <Route path="/fanta" element={<LayoutAdmin />}>
         <Route index element={<Login />} />
@@ -54,7 +55,6 @@ function App() {
         <Route path="sguides" element={<SGuidesAdmin />} />
         <Route path="teams" element={<TeamsAdmin />} />
       </Route>
-      {<Route path="*" element={<NotFound />} />}
     </Routes>
   );
 }
