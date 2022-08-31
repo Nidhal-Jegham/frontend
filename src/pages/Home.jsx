@@ -17,7 +17,6 @@ const Home = ({ setLoading, loading }) => {
     fetch(`${process.env.REACT_APP_API_URL}/home/teams`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setTeam(data);
       });
     fetch(`${process.env.REACT_APP_API_URL}/events`)
