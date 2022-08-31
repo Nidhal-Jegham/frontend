@@ -28,17 +28,7 @@ function Sidebar({
       })
       .catch((err) => console.log(err));
   }, []);
-  const Search = (e) => {
-    setSearchSguide(e.target.value);
-    setSGuidePage(1);
-    console.log(
-      sGuides
-        .filter((sguide) =>
-          sguide.title.toLowerCase().includes(SearchSguide.toLocaleLowerCase())
-        )
-        .filter((sguide) => sguide.language.includes(language))
-    );
-  };
+
   return (
     <div class="sidebar">
       <h3 class="sidebar-title">Search</h3>

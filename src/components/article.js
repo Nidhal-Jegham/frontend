@@ -24,7 +24,7 @@ const Article = ({ article, subjects }) => {
               <i className="bi bi-chat-dots" />{" "}
               <span>
                 {" "}
-                {article.articles.length} {"article/s"}{" "}
+                {article.articles.length} {"article(s)"}{" "}
               </span>
             </li>
           </ul>
