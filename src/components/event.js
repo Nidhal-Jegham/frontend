@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const Event = (props) => {
   const date = new Date(props.event.date).toString().substring(0, 15);
-  const [aftermovie, setafterMovie] = useState(false);
   return (
     <div className="col-md-6 d-flex align-items-stretch">
       <div class="card">
@@ -15,10 +14,10 @@ const Event = (props) => {
           </h5>
           <p class="card-text">{props.event.description}</p>
 
-          <h6 className="card-text">
+          <h6 className="card-text ">
             {" "}
             <i className="bi bi-clock" /> {""}
-            <span>{date}</span>
+            <span> {date}</span>
           </h6>
           <p className="card-text">
             <i className="bi bi-person" />{" "}
@@ -30,7 +29,6 @@ const Event = (props) => {
                 ) {
                   return (
                     <span>
-                      {" "}
                       {sponsor}
                       {" /"}
                     </span>

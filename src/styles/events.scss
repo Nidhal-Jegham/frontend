@@ -71,6 +71,8 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .events-details .card-body {
+  width: calc(100% + 60px);
+
   z-index: 10;
   background: #fff;
   max-width: 100%;
@@ -409,4 +411,7 @@ body {
 }
 .search-bar .search-form button:hover {
   background: #77adca;
+}
+.info {
+  font-weight: 600;
 }

@@ -125,6 +125,9 @@
 #footer .footer-top .footer-contact p {
   line-height: 26px;
 }
+#footer .footer-top .footer-contact a:hover {
+  color: #a2cce3;
+}
 
 #footer .credits {
   padding-top: 20px;
@@ -133,5 +136,8 @@
   color: #fff;
 }
 #footer .credits a {
+  color: #ffffff;
+}
+#footer .credits a:hover {
   color: #a2cce3;
 }

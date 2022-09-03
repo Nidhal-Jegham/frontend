@@ -19,6 +19,8 @@ function SGuidesAdmin() {
       _id: studyguide._id,
       title: e.target.title.value,
       organ: e.target.organ.value,
+      language: e.target.language.value,
+      date: e.target.date.value,
       content: e.target.content.value,
       full: e.target.full.value,
       event: e.target.event.value,
@@ -41,6 +43,7 @@ function SGuidesAdmin() {
       title: e.target.title.value,
       organ: e.target.organ.value,
       date: e.target.date.value,
+      language: e.target.language.value,
       content: e.target.content.value,
       full: e.target.full.value,
       event: e.target.event.value,
@@ -81,6 +84,8 @@ function SGuidesAdmin() {
               <h6>title: {studyguide.title}</h6>
               <h6>organ: {studyguide.organ}</h6>
               <h6>content: {studyguide.content}</h6>
+              <h6>content: {studyguide.language}</h6>
+
               <h6>date: {studyguide.date}</h6>
               <h6>full: {studyguide.full}</h6>
               <h6>event: {studyguide.event}</h6>
@@ -92,6 +97,8 @@ function SGuidesAdmin() {
               <input type="text" placeholder="organ" name="organ"></input>
               <input type="text" placeholder="content" name="content"></input>
               <input type="text" placeholder="date" name="date"></input>
+              <input type="text" placeholder="language" name="language"></input>
+
               <input type="text" placeholder="full" name="full"></input>
               <input type="text" placeholder="event" name="event"></input>
               <input type="submit"></input>
@@ -105,6 +112,8 @@ function SGuidesAdmin() {
         <input type="text" placeholder="organ" name="organ"></input>
         <input type="text" placeholder="content" name="content"></input>
         <input type="text" placeholder="date" name="date"></input>
+        <input type="text" placeholder="language" name="language"></input>
+
         <input type="text" placeholder="full" name="full"></input>
         <input type="text" placeholder="event" name="event"></input>
         <input type="submit"></input>
