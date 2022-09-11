@@ -128,7 +128,7 @@ function Pages({
           }}
           className={
             sGuidePage ===
-              Math.floor(
+              Math.ceil(
                 sGuides
 
                   .filter((sguide) =>
@@ -139,8 +139,7 @@ function Pages({
                   .filter((sguide) => sguide.language.includes(language))
                   .filter((sguide) => sguide.event.includes(eventName)).length /
                   4
-              ) +
-                1 ||
+              ) ||
             sGuides
 
               .filter((sguide) =>

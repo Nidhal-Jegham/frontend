@@ -142,6 +142,20 @@ function Sidebar({
               )
             </span>
           </li>
+          <li
+            onClick={() => changeEvent("Las MUNAS")}
+            className={eventName.includes("Las MUNAS") ? "active" : ""}
+          >
+            Las MUNAS
+            <span>
+              (
+              {
+                sGuides.filter((sGuide) => sGuide.event.includes("Las MUNAS"))
+                  .length
+              }
+              )
+            </span>
+          </li>
         </ul>
       </div>
       <div>

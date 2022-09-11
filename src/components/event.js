@@ -10,7 +10,9 @@ const Event = (props) => {
         </div>
         <div class="card-body">
           <h5 class="card-title">
-            <a href={props.event.drive}>{props.event.name}</a>
+            <a href={props.event.drive} target="_blank">
+              {props.event.name}
+            </a>
           </h5>
           <p class="card-text">{props.event.description}</p>
 
@@ -18,6 +20,11 @@ const Event = (props) => {
             {" "}
             <i className="bi bi-clock" /> {""}
             <span> {date}</span>
+          </h6>
+          <h6 className="card-text ">
+            {" "}
+            <i className="bi bi-geo-alt" /> {""}
+            <span> {props.event.location}</span>
           </h6>
           <p className="card-text">
             <i className="bi bi-person" />{" "}
