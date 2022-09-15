@@ -33,7 +33,7 @@ function Articles({ setLoading, loading }) {
         <div className="container position-relative  d-flex justify-content-center">
           <div className="row justify-content-center">
             <div className="col-xl-8">
-              <h2>To Diplomacy And Beyond </h2>
+              <h2>Diplomacy of The Future </h2>
               <h3>TIMUN TBS</h3>
               <a onClick={LearnMore} href className="btn-get-started ">
                 Know More
