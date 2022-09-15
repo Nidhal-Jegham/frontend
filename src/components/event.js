@@ -4,6 +4,12 @@ const Event = (props) => {
   const date = new Date(props.event.date).toString().substring(0, 15);
   return (
     <div className="col-md-6 d-flex align-items-stretch">
+      <Helmet>
+        <title>{props.event.name}</title>
+        <meta name="description" content={props.event.description}>
+          {" "}
+        </meta>
+      </Helmet>
       <div class="card">
         <div class="card-img">
           <img src={props.event.cover} alt="..."></img>

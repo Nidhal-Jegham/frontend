@@ -34,11 +34,22 @@ function SGuides({ loading, setLoading }) {
   };
   const UpPage = (studyguide) => {
     studyRef.current.scrollIntoView({ behavior: "smooth" });
-    setSGuidePage(sGuidePage + 1);
+    setSGuidePage(
+      Math.ceil(
+        sGuides
+          .filter((sguide) =>
+            sguide.title
+              .toLowerCase()
+              .includes(SearchSguide.toLocaleLowerCase())
+          )
+          .filter((sguide) => sguide.language.includes(language))
+          .filter((sguide) => sguide.event.includes(eventName)).length / 4
+      )
+    );
   };
   const DownPage = (studyguide) => {
     studyRef.current.scrollIntoView({ behavior: "smooth" });
-    setSGuidePage(sGuidePage - 1);
+    setSGuidePage(1);
   };
   useEffect(() => {
     setLoading(true);

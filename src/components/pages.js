@@ -65,8 +65,78 @@ function Pages({
                 4 ===
               0
           )
+
           .map((studyguide) => {
-            return (
+            return sGuides
+
+              .filter((sguide) =>
+                sguide.title
+                  .toLowerCase()
+                  .includes(SearchSguide.toLocaleLowerCase())
+              )
+              .filter((sguide) => sguide.language.includes(language))
+              .filter((sguide) => sguide.event.includes(eventName))
+
+              .indexOf(studyguide) /
+              4 +
+              1 ===
+              sGuidePage - 2 ||
+              sGuides
+
+                .filter((sguide) =>
+                  sguide.title
+                    .toLowerCase()
+                    .includes(SearchSguide.toLocaleLowerCase())
+                )
+                .filter((sguide) => sguide.language.includes(language))
+                .filter((sguide) => sguide.event.includes(eventName))
+
+                .indexOf(studyguide) /
+                4 +
+                1 ===
+                sGuidePage - 1 ||
+              sGuides
+
+                .filter((sguide) =>
+                  sguide.title
+                    .toLowerCase()
+                    .includes(SearchSguide.toLocaleLowerCase())
+                )
+                .filter((sguide) => sguide.language.includes(language))
+                .filter((sguide) => sguide.event.includes(eventName))
+
+                .indexOf(studyguide) /
+                4 +
+                1 ===
+                sGuidePage ||
+              sGuides
+
+                .filter((sguide) =>
+                  sguide.title
+                    .toLowerCase()
+                    .includes(SearchSguide.toLocaleLowerCase())
+                )
+                .filter((sguide) => sguide.language.includes(language))
+                .filter((sguide) => sguide.event.includes(eventName))
+
+                .indexOf(studyguide) /
+                4 +
+                1 ===
+                sGuidePage + 1 ||
+              sGuides
+
+                .filter((sguide) =>
+                  sguide.title
+                    .toLowerCase()
+                    .includes(SearchSguide.toLocaleLowerCase())
+                )
+                .filter((sguide) => sguide.language.includes(language))
+                .filter((sguide) => sguide.event.includes(eventName))
+
+                .indexOf(studyguide) /
+                4 +
+                1 ===
+                sGuidePage + 2 ? (
               <li>
                 <button
                   className={
@@ -120,7 +190,7 @@ function Pages({
                     1}
                 </button>
               </li>
-            );
+            ) : null;
           })}
         <button
           onClick={() => {
