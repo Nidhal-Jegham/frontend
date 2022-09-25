@@ -89,7 +89,11 @@ const AboutUs = ({ team, events, loading }) => {
           <div className="row d-flex align-items-center ">
             {" "}
             <div className="col-md-5 order-1 order-md-2">
-              <img src="assets/img/family.jpg" className="img-fluid" alt />
+              <img
+                src="https://drive.google.com/uc?export=view&id=1uaF4gKRBi0EUl4LmxZJP5SLuLpMhimHu"
+                className="img-fluid"
+                alt
+              />
             </div>
             <div className="col-md-7 pt-5 order-2 order-md-1  ">
               <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
@@ -120,7 +124,7 @@ const AboutUs = ({ team, events, loading }) => {
           <div className="row d-flex align-items-center">
             <div className="col-md-6">
               <img
-                src="assets/img/missionfamily.jpg"
+                src="https://drive.google.com/uc?export=view&id=1YpiEMtSruEPHgBcLGoNRjNhxvooFF52I"
                 className="img-fluid"
                 alt
               />
@@ -148,7 +152,11 @@ const AboutUs = ({ team, events, loading }) => {
           </div>
           <div className="row d-flex align-items-center d-flex align-items-center">
             <div className="col-md-5 order-1 order-md-2">
-              <img src="assets/img/green.jpg" className="img-fluid" alt />
+              <img
+                src="https://drive.google.com/uc?export=view&id=1lyb6lGVoGgHSXu6gMr0a0U6hem8HU_Z8"
+                className="img-fluid"
+                alt
+              />
             </div>
             <div className="col-md-7 pt-5 order-2 order-md-1">
               <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
@@ -176,7 +184,11 @@ const AboutUs = ({ team, events, loading }) => {
 
           <div className="row d-flex align-items-center">
             <div className="col-md-5">
-              <img src="assets/img/events.jpg" className="img-fluid" alt />
+              <img
+                src="https://drive.google.com/uc?export=view&id=1M2mkLQErKUlfGBf0PdoDfKLklhhJijH-"
+                className="img-fluid"
+                alt
+              />
             </div>
             <div className="col-md-7 pt-4">
               <Link to="/events">
@@ -203,7 +215,11 @@ const AboutUs = ({ team, events, loading }) => {
           </div>
           <div className="row d-flex align-items-center">
             <div className="col-md-5 order-1 order-md-2">
-              <img src="assets/img/committee.jpg" className="img-fluid" alt />
+              <img
+                src="https://drive.google.com/uc?export=view&id=1fm0RRWa6OlsRmb83V0IPVGZS_YXyKSoZ"
+                className="img-fluid"
+                alt
+              />
             </div>
             <div className="col-md-7 pt-5 order-2 order-md-1">
               <Link to="/sguides">
@@ -226,7 +242,11 @@ const AboutUs = ({ team, events, loading }) => {
           </div>
           <div className="row d-flex align-items-center">
             <div className="col-md-5">
-              <img src="assets/img/magazines.jpg" className="img-fluid" alt />
+              <img
+                src="https://drive.google.com/uc?export=view&id=12RGRDOLNz_dzxz1erLKiKGex-129gOTE"
+                className="img-fluid"
+                alt
+              />
             </div>
             <div className="col-md-7 pt-5">
               <Link to="/articles">
