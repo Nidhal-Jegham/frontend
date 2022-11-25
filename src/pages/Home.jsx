@@ -3,7 +3,7 @@ import AboutUs from "../components/aboutUs";
 
 import "../styles/home.scss";
 
-const Home = ({ setLoading, loading }) => {
+const Home = () => {
   const AboutUsRef = useRef();
 
   const LearnMore = () => {
@@ -29,7 +29,7 @@ const Home = ({ setLoading, loading }) => {
         </div>
       </section>
       <div ref={AboutUsRef}>
-        <AboutUs loading={loading} setLoading={setLoading} />
+        <AboutUs />
       </div>
     </div>
   );
