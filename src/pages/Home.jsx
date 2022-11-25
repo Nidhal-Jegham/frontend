@@ -13,19 +13,13 @@ const Home = ({ setLoading, loading }) => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    setLoading(true);
-    fetch(`${process.env.REACT_APP_API_URL}/home/teams`)
+    setLoading(false);
+    fetch("https://timunservices.onrender.com/home/teams")
       .then((res) => res.json())
       .then((data) => {
         setTeam(data);
-      });
-    fetch(`${process.env.REACT_APP_API_URL}/events`)
-      .then((res) => res.json())
-      .then((data) => {
-        setEvents(data);
         setLoading(false);
-      })
-      .catch((err) => console.log(err));
+      });
   }, []);
   if (loading) return null;
 

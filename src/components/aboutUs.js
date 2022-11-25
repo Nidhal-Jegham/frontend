@@ -3,7 +3,7 @@ import "../styles/aboutus.scss";
 import { Link } from "react-router-dom";
 import CountDown from "./countdown";
 
-const AboutUs = ({ team, events, loading }) => {
+const AboutUs = ({ team, loading }) => {
   const componentDidMount = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
