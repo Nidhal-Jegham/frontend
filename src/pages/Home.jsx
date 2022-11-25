@@ -9,21 +9,7 @@ const Home = ({ setLoading, loading }) => {
   const LearnMore = () => {
     AboutUsRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  const [team, setTeam] = useState([]);
-  const [events, setEvents] = useState([]);
 
-  useEffect(() => {
-    setLoading(false);
-    fetch("https://timunservices.onrender.com/home/teams")
-      .then((res) => res.json())
-      .then((data) => {
-        setTeam(data);
-        setLoading(false);
-      });
-  }, []);
-  if (loading) return null;
-
-  setLoading(false);
   return (
     <div>
       <section
@@ -43,7 +29,7 @@ const Home = ({ setLoading, loading }) => {
         </div>
       </section>
       <div ref={AboutUsRef}>
-        <AboutUs events={events} team={team} />
+        <AboutUs loading={loading} setLoading={setLoading} />
       </div>
     </div>
   );

@@ -3,12 +3,28 @@ import "../styles/aboutus.scss";
 import { Link } from "react-router-dom";
 import CountDown from "./countdown";
 
-const AboutUs = ({ team, loading }) => {
+const AboutUs = ({ loading, setLoading }) => {
   const componentDidMount = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const [team, setTeam] = useState([]);
+  const [about, setAbout] = useState([]);
 
+  useEffect(() => {
+    fetch("https://timunservices.onrender.com/home/teams")
+      .then((res) => res.json())
+      .then((data) => {
+        setTeam(data);
+      });
+    fetch("https://timunservices.onrender.com/home")
+      .then((res) => res.json())
+      .then((data) => {
+        setAbout(data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
   if (loading) return null;
+
   return (
     <div>
       <section class="values">
@@ -20,7 +36,7 @@ const AboutUs = ({ team, loading }) => {
               <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
                 <div class="icon-box ">
                   <div class="icon">
-                    <i class="bx bx-world"></i>
+                    <i class="bi bi-globe2"></i>
                   </div>
                   <h4 class="title">
                     <a href="">Diplomacy</a>
@@ -35,7 +51,7 @@ const AboutUs = ({ team, loading }) => {
               <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
                 <div class="icon-box icon-box-blue">
                   <div class="icon">
-                    <i class="bx bx-file"></i>
+                    <i class="bx bx-lemon"></i>
                   </div>
                   <h4 class="title">
                     <a href="">Innovation</a>
@@ -89,24 +105,14 @@ const AboutUs = ({ team, loading }) => {
           <div className="row d-flex align-items-center ">
             {" "}
             <div className="col-md-5 order-1 order-md-2">
-              <img
-                src="https://drive.google.com/uc?export=view&id=1uaF4gKRBi0EUl4LmxZJP5SLuLpMhimHu"
-                className="img-fluid"
-                alt
-              />
+              <img src={about[0].src} className="img-fluid" alt />
             </div>
             <div className="col-md-7 pt-5 order-2 order-md-1  ">
               <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
                 <h3>Who we are</h3>
               </a>
 
-              <p className="fst-italic">
-                TIMUN TBS is a student organization under the direct supervision
-                of an active community operating under the instructions of the
-                UN. Our club seeks to strengthen the skills of students such as
-                public speaking, academic knowledge, international relations,
-                and leadership.
-              </p>
+              <p className="fst-italic">{about[0].text}</p>
 
               <ul>
                 <a
@@ -123,20 +129,13 @@ const AboutUs = ({ team, loading }) => {
 
           <div className="row d-flex align-items-center">
             <div className="col-md-6">
-              <img
-                src="https://drive.google.com/uc?export=view&id=1YpiEMtSruEPHgBcLGoNRjNhxvooFF52I"
-                className="img-fluid"
-                alt
-              />
+              <img src={about[1].src} className="img-fluid" alt />
             </div>
             <div className="col-md-6   pt-5 ">
               <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
                 <h3>Our Vision</h3>
               </a>
-              <p className="fst-italic">
-                To provide students with the fundamental skills to integrate and
-                lead the international community when facing global challenges.
-              </p>
+              <p className="fst-italic">{about[1].text}</p>
 
               <ul>
                 <a
@@ -152,22 +151,13 @@ const AboutUs = ({ team, loading }) => {
           </div>
           <div className="row d-flex align-items-center d-flex align-items-center">
             <div className="col-md-5 order-1 order-md-2">
-              <img
-                src="https://drive.google.com/uc?export=view&id=1lyb6lGVoGgHSXu6gMr0a0U6hem8HU_Z8"
-                className="img-fluid"
-                alt
-              />
+              <img src={about[2].src} className="img-fluid" alt />
             </div>
             <div className="col-md-7 pt-5 order-2 order-md-1">
               <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
                 <h3>Our Mission</h3>
               </a>
-              <p className="fst-italic">
-                Create a healthy environment for students to develop their
-                diplomatic and leadership skills and unleash their potential
-                alongside maintaining a sense of solidarity and cooperation
-                inside the entity.
-              </p>
+              <p className="fst-italic">{about[2].text}</p>
 
               <ul>
                 <a
@@ -184,11 +174,7 @@ const AboutUs = ({ team, loading }) => {
 
           <div className="row d-flex align-items-center">
             <div className="col-md-5">
-              <img
-                src="https://drive.google.com/uc?export=view&id=1M2mkLQErKUlfGBf0PdoDfKLklhhJijH-"
-                className="img-fluid"
-                alt
-              />
+              <img src={about[3].src} className="img-fluid" alt />
             </div>
             <div className="col-md-7 pt-4">
               <Link to="/events">
@@ -196,13 +182,7 @@ const AboutUs = ({ team, loading }) => {
                 <h3>Our Events</h3>
               </Link>
 
-              <p className="fst-italic">
-                For those who are interested in the realm of diplomacy, eager to
-                test their public speaking and negotiation skills, want to
-                expand their academic knowledge and meet interesting people;
-                coming to our events is the perfect opportunity for you to
-                experience that and more.
-              </p>
+              <p className="fst-italic">{about[3].text}</p>
 
               <ul>
                 <a href className="btn-get-started ">
@@ -215,11 +195,7 @@ const AboutUs = ({ team, loading }) => {
           </div>
           <div className="row d-flex align-items-center">
             <div className="col-md-5 order-1 order-md-2">
-              <img
-                src="https://drive.google.com/uc?export=view&id=1fm0RRWa6OlsRmb83V0IPVGZS_YXyKSoZ"
-                className="img-fluid"
-                alt
-              />
+              <img src={about[4].src} className="img-fluid" alt />
             </div>
             <div className="col-md-7 pt-5 order-2 order-md-1">
               <Link to="/sguides">
@@ -227,11 +203,7 @@ const AboutUs = ({ team, loading }) => {
                 <h3>Our Study Guides</h3>
               </Link>
 
-              <p className="fst-italic">
-                A deep dive into the world of politics, economics, and many
-                more. In our study guides, we tackle numerous subjects with high
-                informative value and immaculate academic skills.
-              </p>
+              <p className="fst-italic">{about[5].text}</p>
 
               <ul>
                 <a href className="btn-get-started ">
@@ -242,11 +214,7 @@ const AboutUs = ({ team, loading }) => {
           </div>
           <div className="row d-flex align-items-center">
             <div className="col-md-5">
-              <img
-                src="https://drive.google.com/uc?export=view&id=12RGRDOLNz_dzxz1erLKiKGex-129gOTE"
-                className="img-fluid"
-                alt
-              />
+              <img src={about[5].src} className="img-fluid" alt />
             </div>
             <div className="col-md-7 pt-5">
               <Link to="/articles">

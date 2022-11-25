@@ -52,7 +52,7 @@ function SGuides({ loading, setLoading }) {
     setSGuidePage(1);
   };
   useEffect(() => {
-    setLoading(true);
+    setLoading(false);
     setEventName("");
     setLanguage("");
     setSGuidePage(1);

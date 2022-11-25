@@ -13,7 +13,7 @@ function Articles({ setLoading, loading }) {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    setLoading(true);
+    setLoading(false);
     fetch(`${process.env.REACT_APP_API_URL}/articles`)
       .then((res) => res.json())
       .then((data) => {
