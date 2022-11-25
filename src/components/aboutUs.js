@@ -112,7 +112,7 @@ const AboutUs = ({ loading, setLoading }) => {
                 </div>
                 <div className="col-md-7 pt-5 order-2 order-md-1  ">
                   <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
-                    <h3>Who we are</h3>
+                    <h3>{section.title1}</h3>
                   </a>
 
                   <p className="fst-italic">{section.text1}</p>
@@ -136,7 +136,7 @@ const AboutUs = ({ loading, setLoading }) => {
                 </div>
                 <div className="col-md-6   pt-5 ">
                   <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
-                    <h3>Our Vision</h3>
+                    <h3>{section.title2}</h3>
                   </a>
                   <p className="fst-italic">{section.text2}</p>
 
