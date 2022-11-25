@@ -9,7 +9,12 @@ const Home = ({ setLoading, loading }) => {
   const LearnMore = () => {
     AboutUsRef.current.scrollIntoView({ behavior: "smooth" });
   };
-
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+  if (loading) {
+    return null;
+  }
   return (
     <div>
       <section

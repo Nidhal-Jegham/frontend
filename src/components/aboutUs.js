@@ -10,14 +10,14 @@ const AboutUs = ({ loading, setLoading }) => {
   const [team, setTeam] = useState([]);
   const [about, setAbout] = useState([]);
 
-  useEffect(async () => {
+  useEffect(() => {
     setLoading(false);
     fetch("https://timunservices.onrender.com/home/teams")
       .then((res) => res.json())
       .then((data) => {
         setTeam(data);
       });
-    await fetch("https://timunservices.onrender.com/home")
+    fetch("https://timunservices.onrender.com/home")
       .then((res) => res.json())
       .then((data) => {
         setAbout(data);
