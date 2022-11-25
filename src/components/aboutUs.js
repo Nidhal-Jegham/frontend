@@ -3,7 +3,7 @@ import "../styles/aboutus.scss";
 import { Link } from "react-router-dom";
 import CountDown from "./countdown";
 
-const AboutUs = () => {
+const AboutUs = ({ loading, setLoading }) => {
   const componentDidMount = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -11,6 +11,7 @@ const AboutUs = () => {
   const [about, setAbout] = useState([]);
 
   useEffect(() => {
+    setLoading(false);
     fetch(`${process.env.REACT_APP_API_URL}/home/teams`)
       .then((res) => res.json())
       .then((data) => {
@@ -23,6 +24,7 @@ const AboutUs = () => {
       })
       .catch((err) => console.log(err));
   }, []);
+  if (loading) return null;
 
   return (
     <div>
