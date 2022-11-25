@@ -10,17 +10,18 @@ const AboutUs = ({ loading, setLoading }) => {
   const [team, setTeam] = useState([]);
   const [about, setAbout] = useState([]);
 
-  useEffect(() => {
+  useEffect(async () => {
     setLoading(false);
-    fetch(`${process.env.REACT_APP_API_URL}/home/teams`)
+    fetch("https://timunservices.onrender.com/home/teams")
       .then((res) => res.json())
       .then((data) => {
         setTeam(data);
       });
-    fetch(`${process.env.REACT_APP_API_URL}/home`)
+    await fetch("https://timunservices.onrender.com/home")
       .then((res) => res.json())
       .then((data) => {
         setAbout(data);
+        setLoading(false);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -101,144 +102,59 @@ const AboutUs = ({ loading, setLoading }) => {
       </section>
       <hr></hr>
       <section className="about-us">
-        <div className="container about-us ">
-          <div className="section-title"></div>
-          <div className="row d-flex align-items-center ">
-            {" "}
-            <div className="col-md-5 order-1 order-md-2">
-              <img src={about[0].src} className="img-fluid" alt />
-            </div>
-            <div className="col-md-7 pt-5 order-2 order-md-1  ">
-              <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
-                <h3>Who we are</h3>
-              </a>
-
-              <p className="fst-italic">{about[0].text}</p>
-
-              <ul>
-                <a
-                  href="https://www.facebook.com/TIMUN.TBS"
-                  target="_blank
-                  "
-                  className="btn-get-started "
-                >
-                  Learn More
-                </a>
-              </ul>
-            </div>
-          </div>
-
-          <div className="row d-flex align-items-center">
-            <div className="col-md-6">
-              <img src={about[1].src} className="img-fluid" alt />
-            </div>
-            <div className="col-md-6   pt-5 ">
-              <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
-                <h3>Our Vision</h3>
-              </a>
-              <p className="fst-italic">{about[1].text}</p>
-
-              <ul>
-                <a
-                  href="https://www.facebook.com/TIMUN.TBS"
-                  target="_blank
-                  "
-                  className="btn-get-started "
-                >
-                  Learn More
-                </a>
-              </ul>
-            </div>
-          </div>
-          <div className="row d-flex align-items-center d-flex align-items-center">
-            <div className="col-md-5 order-1 order-md-2">
-              <img src={about[2].src} className="img-fluid" alt />
-            </div>
-            <div className="col-md-7 pt-5 order-2 order-md-1">
-              <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
-                <h3>Our Mission</h3>
-              </a>
-              <p className="fst-italic">{about[2].text}</p>
-
-              <ul>
-                <a
-                  href="https://www.facebook.com/TIMUN.TBS"
-                  target="_blank
-                  "
-                  className="btn-get-started "
-                >
-                  Learn More
-                </a>
-              </ul>
-            </div>
-          </div>
-
-          <div className="row d-flex align-items-center">
-            <div className="col-md-5">
-              <img src={about[3].src} className="img-fluid" alt />
-            </div>
-            <div className="col-md-7 pt-4">
-              <Link to="/events">
+        {about.map((section) => {
+          return (
+            <div className="container about-us ">
+              <div className="row d-flex align-items-center ">
                 {" "}
-                <h3>Our Events</h3>
-              </Link>
+                <div className="col-md-5 order-1 order-md-2">
+                  <img src={section.src1} className="img-fluid" alt />
+                </div>
+                <div className="col-md-7 pt-5 order-2 order-md-1  ">
+                  <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
+                    <h3>Who we are</h3>
+                  </a>
 
-              <p className="fst-italic">{about[3].text}</p>
+                  <p className="fst-italic">{section.text1}</p>
 
-              <ul>
-                <a href className="btn-get-started ">
-                  <Link onClick={componentDidMount} to="/events">
-                    Learn More
-                  </Link>
-                </a>
-              </ul>
-            </div>
-          </div>
-          <div className="row d-flex align-items-center">
-            <div className="col-md-5 order-1 order-md-2">
-              <img src={about[4].src} className="img-fluid" alt />
-            </div>
-            <div className="col-md-7 pt-5 order-2 order-md-1">
-              <Link to="/sguides">
-                {" "}
-                <h3>Our Study Guides</h3>
-              </Link>
+                  <ul>
+                    <a
+                      href="https://www.facebook.com/TIMUN.TBS"
+                      target="_blank
+                  "
+                      className="btn-get-started "
+                    >
+                      Learn More
+                    </a>
+                  </ul>
+                </div>
+              </div>
 
-              <p className="fst-italic">{about[5].text}</p>
+              <div className="row d-flex align-items-center">
+                <div className="col-md-6">
+                  <img src={section.src2} className="img-fluid" alt />
+                </div>
+                <div className="col-md-6   pt-5 ">
+                  <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
+                    <h3>Our Vision</h3>
+                  </a>
+                  <p className="fst-italic">{section.text2}</p>
 
-              <ul>
-                <a href className="btn-get-started ">
-                  <Link to="/sguides">Learn More</Link>
-                </a>
-              </ul>
+                  <ul>
+                    <a
+                      href="https://www.facebook.com/TIMUN.TBS"
+                      target="_blank
+                  "
+                      className="btn-get-started "
+                    >
+                      Learn More
+                    </a>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="row d-flex align-items-center">
-            <div className="col-md-5">
-              <img src={about[5].src} className="img-fluid" alt />
-            </div>
-            <div className="col-md-7 pt-5">
-              <Link to="/articles">
-                {" "}
-                <h3>Our Articles</h3>
-              </Link>
-              <p className="fst-italic">
-                TIMUN TBS contributes to the academic world with numerous
-                articles. On subjects ranging from cults to genetic engineering,
-                the creativity of our academics is limitless.
-              </p>
-              <ul>
-                <a
-                  onClick={componentDidMount}
-                  href
-                  className="btn-get-started "
-                >
-                  <Link to="/articles"> Learn More</Link>
-                </a>
-              </ul>
-            </div>
-          </div>
-        </div>
+          );
+        })}
       </section>
 
       <hr></hr>
