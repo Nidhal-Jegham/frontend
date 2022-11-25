@@ -23,7 +23,6 @@ const AboutUs = () => {
       })
       .catch((err) => console.log(err));
   }, []);
-  if (loading) return null;
 
   return (
     <div>
