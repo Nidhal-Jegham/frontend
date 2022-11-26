@@ -56,7 +56,7 @@ function SGuides({ loading, setLoading }) {
     setEventName("");
     setLanguage("");
     setSGuidePage(1);
-    fetch(`${process.env.REACT_APP_API_URL}/sguides`)
+    fetch("https://timunservices.onrender.com/sguides")
       .then((res) => res.json())
       .then((data) => {
         setSGuides(data);

@@ -37,7 +37,7 @@ body {
     max-width: 100%;
     position: relative;
     h3 {
-      color: #183341;
+      color: rgba(20, 51, 90, 1);
 
       font-weight: 400;
       font-size: 45px;
@@ -122,10 +122,10 @@ body {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #68a4c4;
+  border: 2px solid rgba(20, 51, 90, 1);
 }
 #studyguides .btn-get-started:hover {
-  background: #68a4c4;
+  background: rgba(20, 51, 90, 1);
   color: #fff;
   text-decoration: none;
 }
@@ -137,7 +137,7 @@ body {
 }
 
 .sguide .entry {
-  background: #fff;
+  background: rgb(255, 255, 255);
   padding: 0.4px 30px 30px 30px;
   margin-top: 30px;
   margin-bottom: 60px;
@@ -173,18 +173,23 @@ body {
   font-weight: bold;
   padding: 0;
   a {
-    color: #1e4356;
+    color: rgba(20, 51, 90, 1);
+    transition: 0.3s;
   }
+}
+.sguide .entry .entry-subtitle a:hover {
+  color: rgb(37, 94, 165);
+  transition: 0.3s;
 }
 .sguide .entry p {
   margin-bottom: 15px;
 
   padding: 0;
 
-  color: #1e4356;
+  color: #5e5e5e;
 }
 .sguide .entry .entry-title a {
-  color: #1e4356;
+  color: rgba(20, 51, 90, 1);
   transition: 0.3s;
 }
 .sguide .entry .entry-title a:hover {
@@ -192,9 +197,12 @@ body {
 }
 .sguide .entry .entry-meta {
   font-size: 18px;
-  color: rgb(37, 94, 165) 2;
+  color: rgb(165, 110, 37) 2;
 }
 .sguide .entry .entry-meta ul {
+  color: #5e5e5e;
+  font-size: 15px;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -208,12 +216,13 @@ body {
   margin-top: 20px;
 }
 .sguide .entry .entry-meta i {
+  color: rgba(20, 51, 90, 1);
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
 }
 .sguide .entry .entry-meta a {
-  color: #777777;
+  color: #5e5d5d;
   font-size: 14px;
   display: inline-block;
   line-height: 1;
@@ -227,7 +236,7 @@ body {
 }
 .sguide .entry .entry-content .read-more a {
   display: inline-block;
-  background: rgb(37, 94, 165);
+  background: rgba(20, 51, 90, 1);
   color: #fff;
   margin-top: 10px;
   padding: 6px 20px;
@@ -235,7 +244,7 @@ body {
   font-size: 14px;
 }
 .sguide .entry .entry-content .read-more a:hover {
-  background: rgba(20, 51, 90, 1);
+  background: rgb(37, 94, 165);
 }
 .sguide .entry .entry-content h3 {
   font-size: 22px;
@@ -256,7 +265,7 @@ body {
   width: 30vw;
   content: " ";
   display: block;
-  border: 0.5px solid #68a4c4;
+  border: 0.5px solid rgb(37, 94, 165);
 }
 
 .sguide .entry .entry-footer {
@@ -272,7 +281,7 @@ body {
   transition: 0.3s;
 }
 .sguide .entry .entry-footer a:hover {
-  color: #68a4c4;
+  color: rgb(37, 94, 165);
 }
 .sguide .entry .entry-footer .cats {
   list-style: none;
@@ -320,7 +329,7 @@ body {
   font-size: 22px;
   margin-bottom: 0px;
   padding: 0;
-  color: #1e4356;
+  color: rgba(20, 51, 90, 1);
 }
 .sguide .sguide-author .social-links {
   margin: 0 10px 10px 0;
@@ -350,7 +359,7 @@ body {
   transition: 0.3s;
 }
 .pages li .active {
-  background: #68a4c4;
+  background: rgba(20, 51, 90, 1);
   color: #fff;
 }
 .pages button {
@@ -359,6 +368,7 @@ body {
   align-items: center;
   justify-content: center;
   border: none;
+  background-color: #d2d2d2;
 }
 .upDown {
   color: black;
@@ -367,10 +377,10 @@ body {
 .pages .active button,
 .pages li:hover button {
   color: #fff;
-  background: #68a4c4;
+  background: rgba(20, 51, 90, 1);
 }
 .pages .upDown:hover {
-  color: #68a4c4;
+  color: rgba(20, 51, 90, 1);
 }
 .inactive {
   visibility: hidden;
@@ -385,7 +395,7 @@ body {
   font-weight: 700;
   padding: 0 0 0 0;
   margin: 0 0 15px 0;
-  color: #1e4356;
+  color: rgba(20, 51, 90, 1);
   position: relative;
 }
 .sidebar .sidebar-item {
@@ -414,7 +424,7 @@ body {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: rgb(37, 94, 165);
+  background: rgba(20, 51, 90, 1);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -424,7 +434,7 @@ body {
   line-height: 0;
 }
 .sidebar .search-form button:hover {
-  background: rgba(20, 51, 90, 1);
+  background: rgb(37, 94, 165);
 }
 .sidebar .categories ul {
   list-style: none;
@@ -435,7 +445,7 @@ body {
 }
 .sidebar .categories ul li {
   cursor: pointer;
-  color: #1e4356;
+  color: rgba(20, 51, 90, 1);
   transition: 0.3s;
 }
 .sidebar .categories ul .active,
@@ -462,7 +472,7 @@ body {
   font-weight: bold;
 }
 .sidebar .recent-posts h4 a {
-  color: #1e4356;
+  color: rgba(20, 51, 90, 1);
   transition: 0.3s;
 }
 .sidebar .recent-posts h4 a:hover {

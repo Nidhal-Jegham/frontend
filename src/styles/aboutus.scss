@@ -54,12 +54,12 @@
 .about-us a :hover {
   transition: 0.3s;
 
-  color: #68a4c4;
+  color: rgba(20, 51, 90, 1);
 }
 .about-us a :hover {
   transition: 0.3s;
 
-  color: #68a4c4;
+  color: rgba(20, 51, 90, 1);
 }
 .row {
   display: flex;
@@ -116,7 +116,7 @@
 .about ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #68a4c4;
+  color: rgba(20, 51, 90, 1);
 }
 .about p:last-child {
   margin-bottom: 0;
@@ -139,7 +139,7 @@
   }
 
   h3 {
-    color: #183341;
+    color: rgba(20, 51, 90, 1);
 
     text-align: center;
     margin-bottom: 40px;
@@ -188,7 +188,7 @@
 .values .icon i {
   font-size: 36px;
   line-height: 1;
-  color: #2282ff;
+  color: rgb(37, 94, 165);
 }
 .values .title {
   font-weight: 700;
@@ -239,7 +239,7 @@
   opacity: 0;
   transition: bottom ease-in-out 0.4s;
   text-align: center;
-  background: rgba(30, 67, 86, 0.8);
+  background: rgba(20, 51, 90, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,7 +251,7 @@
   display: inline-block;
 }
 .team .member .social a:hover {
-  color: #68a4c4;
+  color: rgba(20, 51, 90, 1);
 }
 .team .member .social i {
   font-size: 18px;
@@ -268,7 +268,7 @@
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
-  color: #68a4c4;
+  color: rgba(20, 51, 90, 1);
 }
 .team .member .member-info p {
   font-style: italic;
@@ -474,7 +474,7 @@
 }
 
 .board h3 {
-  color: #183341;
+  color: rgba(20, 51, 90, 1);
 }
 .aboutIMG {
   aspect-ratio: 3/2;

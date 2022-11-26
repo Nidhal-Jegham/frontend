@@ -94,7 +94,7 @@ body {
 .events-details .card-text {
   color: #5e5e5e;
   i {
-    color: #68a4c4;
+    color: rgba(20, 51, 90, 1);
   }
 }
 .read-more {
@@ -114,10 +114,10 @@ body {
   transform: scale(1.1);
 }
 .events-details .card:hover .card-body {
-  border-color: #68a4c4;
+  border-color: rgba(20, 51, 90, 1);
 }
 .events-details .card:hover .card-body .card-title a {
-  color: #68a4c4;
+  color: rgba(20, 51, 90, 1);
 }
 .learnMore {
   a {
@@ -126,12 +126,12 @@ body {
 
     margin-top: 2%;
     display: inline-block;
-    color: #68a4c4;
+    color: rgba(20, 51, 90, 1);
     background: transparent;
     padding: 6px 20px;
     transition: 0.3s;
     font-size: 14px;
-    border: 0.5px solid #68a4c4;
+    border: 0.5px solid rgba(20, 51, 90, 1);
   }
   a:hover {
     background: #77adca;
@@ -153,12 +153,12 @@ body {
     width: 50%;
     margin-top: 2%;
     display: inline-block;
-    color: #68a4c4;
+    color: rgba(20, 51, 90, 1);
     background: transparent;
     padding: 6px 20px;
     transition: 0.3s;
     font-size: 14px;
-    border: 0.5px solid #68a4c4;
+    border: 0.5px solid rgba(20, 51, 90, 1);
   }
 
   a:hover {
@@ -186,7 +186,7 @@ body {
   width: 90vw;
   content: " ";
   display: block;
-  border: 0.5px solid #68a4c4;
+  border: 0.5px solid rgb(37, 94, 165);
 }
 
 @media (max-width: 1300px) {
@@ -286,10 +286,10 @@ body {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #68a4c4;
+  border: 2px solid rgba(20, 51, 90, 1);
 }
 #events .btn-get-started:hover {
-  background: #68a4c4;
+  background: rgba(20, 51, 90, 1);
   color: #fff;
   text-decoration: none;
 }
@@ -346,7 +346,7 @@ body {
   }
   button {
     border: none;
-    background: #68a4c4;
+    background: rgba(20, 51, 90, 1);
     i {
       height: auto;
     }
@@ -400,7 +400,7 @@ body {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #68a4c4;
+  background: rgba(20, 51, 90, 1);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;

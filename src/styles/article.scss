@@ -50,10 +50,10 @@ body {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid rgb(37, 94, 165);
+  border: 2px solid rgba(20, 51, 90, 1);
 }
 #articles .btn-get-started:hover {
-  background: rgb(37, 94, 165);
+  background: rgba(20, 51, 90, 1);
   color: #fff;
   text-decoration: none;
 }
@@ -76,7 +76,7 @@ body {
   margin-bottom: 60px;
 }
 .title h3 {
-  color: #183341;
+  color: rgba(20, 51, 90, 1);
 
   margin-top: 10vh;
   font-weight: 400;
@@ -89,7 +89,7 @@ body {
   width: 90vw;
   content: " ";
   display: block;
-  border: 0.5px solid #68a4c4;
+  border: 0.5px solid rgb(37, 94, 165);
 }
 
 .magazine {
@@ -112,15 +112,15 @@ body {
   margin: 0 0 20px 0;
 }
 .magazine .entry .entry-title a {
-  color: #1e4356;
+  color: rgba(20, 51, 90, 1);
   transition: 0.3s;
 }
 .magazine .entry .entry-title a:hover {
-  color: #68a4c4;
+  color: rgb(37, 94, 165);
 }
 .magazine .entry .entry-meta {
   margin-bottom: 15px;
-  color: #72afce;
+  color: rgb(37, 94, 165);
 }
 .magazine .entry .entry-meta ul {
   display: flex;
@@ -154,12 +154,12 @@ body {
 }
 .magazine .entry .entry-content .read-more a {
   display: inline-block;
-  background: #68a4c4;
+  background: rgba(20, 51, 90, 1);
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
   font-size: 14px;
 }
 .magazine .entry .entry-content .read-more a:hover {
-  background: #7aafcb;
+  background: rgb(37, 94, 165);
 }

@@ -14,7 +14,7 @@ function Articles({ setLoading, loading }) {
 
   useEffect(() => {
     setLoading(false);
-    fetch(`${process.env.REACT_APP_API_URL}/articles`)
+    fetch("https://timunservices.onrender.com/articles")
       .then((res) => res.json())
       .then((data) => {
         setArticles(data);

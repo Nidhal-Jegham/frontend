@@ -146,7 +146,7 @@
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #68a4c4;
+  color: rgba(20, 51, 90, 1);
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -264,7 +264,7 @@
   line-height: 0;
 }
 .back-to-top-active:hover {
-  background: rgba(20, 51, 90, 1);
+  background: rgb(37, 94, 165);
   color: #fff;
 }
 .back-to-top-active {
@@ -279,7 +279,7 @@
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: rgb(37, 94, 165);
+  background: rgba(20, 51, 90, 1);
   width: 40px;
   height: 40px;
   transition: all 0.4s;
@@ -294,7 +294,7 @@
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #68a4c4;
+  color: rgba(20, 51, 90, 1);
 }
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
