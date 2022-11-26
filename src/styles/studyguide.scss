@@ -188,11 +188,11 @@ body {
   transition: 0.3s;
 }
 .sguide .entry .entry-title a:hover {
-  color: #68a4c4;
+  color: rgb(37, 94, 165);
 }
 .sguide .entry .entry-meta {
   font-size: 18px;
-  color: #367392;
+  color: rgb(37, 94, 165) 2;
 }
 .sguide .entry .entry-meta ul {
   display: flex;
@@ -227,7 +227,7 @@ body {
 }
 .sguide .entry .entry-content .read-more a {
   display: inline-block;
-  background: #68a4c4;
+  background: rgb(37, 94, 165);
   color: #fff;
   margin-top: 10px;
   padding: 6px 20px;
@@ -235,7 +235,7 @@ body {
   font-size: 14px;
 }
 .sguide .entry .entry-content .read-more a:hover {
-  background: #7aafcb;
+  background: rgba(20, 51, 90, 1);
 }
 .sguide .entry .entry-content h3 {
   font-size: 22px;
@@ -414,7 +414,7 @@ body {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #68a4c4;
+  background: rgb(37, 94, 165);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -424,7 +424,7 @@ body {
   line-height: 0;
 }
 .sidebar .search-form button:hover {
-  background: #77adca;
+  background: rgba(20, 51, 90, 1);
 }
 .sidebar .categories ul {
   list-style: none;
@@ -440,7 +440,7 @@ body {
 }
 .sidebar .categories ul .active,
 .sidebar .categories ul li:hover {
-  color: #68a4c4;
+  color: rgb(37, 94, 165);
 }
 .sidebar .categories ul li span {
   padding-left: 5px;
@@ -466,7 +466,7 @@ body {
   transition: 0.3s;
 }
 .sidebar .recent-posts h4 a:hover {
-  color: #68a4c4;
+  color: rgba(20, 51, 90, 1);
 }
 .sidebar .recent-posts time {
   display: block;

@@ -40,18 +40,30 @@ const Navbar = (props) => {
   });
   return (
     <div>
+      <div
+        class={
+          navbar
+            ? "back-to-top-active d-flex align-items-center justify-content-center"
+            : "back-to-top d-flex align-items-center justify-content-center"
+        }
+        onClick={componentDidMount}
+      >
+        <i class="bi bi-arrow-up-short"></i>
+      </div>
       <header
         id={navbar ? "header-scrolled" : "header"}
         class="fixed-top d-flex align-items-center header-transparent"
       >
         <div class="container d-flex justify-content-between align-items-center">
           <div class="logo" onClick={componentDidMount}>
-            <img
-              src="assets/img/white-logo.png"
-              // onClick={(e) => goTo(e.target.id)}
-              alt=""
-              class="img-fluid"
-            ></img>
+            {" "}
+            <Link className="navbar-comp" to="/">
+              <img
+                src="assets/img/white-logo.png"
+                alt=""
+                class="img-fluid"
+              ></img>
+            </Link>
           </div>
 
           <nav id="navbar" className={mobile ? "navbar" : "navbar-mobile"}>

@@ -108,47 +108,92 @@ const AboutUs = ({ loading, setLoading }) => {
               <div className="row d-flex align-items-center ">
                 {" "}
                 <div className="col-md-5 order-1 order-md-2">
-                  <img src={section.src1} className="img-fluid" alt />
+                  <img src={section.src1} className="img-fluid aboutIMG" alt />
                 </div>
                 <div className="col-md-7 pt-5 order-2 order-md-1  ">
-                  <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
-                    <h3>{section.title1}</h3>
-                  </a>
-
+                  {" "}
+                  <div>
+                    {" "}
+                    {section.boolean1 ? (
+                      <Link onClick={componentDidMount} to={section.link1}>
+                        <h3>{section.title1}</h3>{" "}
+                      </Link>
+                    ) : (
+                      <a
+                        href={section.link1}
+                        target="_blank
+        "
+                      >
+                        <h3>{section.title1}</h3>{" "}
+                      </a>
+                    )}{" "}
+                  </div>
                   <p className="fst-italic">{section.text1}</p>
-
                   <ul>
-                    <a
-                      href="https://www.facebook.com/TIMUN.TBS"
-                      target="_blank
-                  "
-                      className="btn-get-started "
-                    >
-                      Learn More
-                    </a>
+                    {section.boolean1 ? (
+                      <Link
+                        onClick={componentDidMount}
+                        className="btn-get-started "
+                        to={section.link1}
+                      >
+                        Learn More
+                      </Link>
+                    ) : (
+                      <a
+                        href={section.link1}
+                        target="_blank
+        "
+                        className="btn-get-started "
+                      >
+                        Learn More
+                      </a>
+                    )}
                   </ul>
                 </div>
               </div>
 
               <div className="row d-flex align-items-center">
                 <div className="col-md-6">
-                  <img src={section.src2} className="img-fluid" alt />
+                  <img src={section.src2} className="img-fluid aboutIMG" alt />
                 </div>
                 <div className="col-md-6   pt-5 ">
-                  <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
-                    <h3>{section.title2}</h3>
-                  </a>
+                  <div>
+                    {" "}
+                    {section.boolean2 ? (
+                      <Link onClick={componentDidMount} to={section.link2}>
+                        <h3>{section.title2}</h3>{" "}
+                      </Link>
+                    ) : (
+                      <a
+                        href={section.link2}
+                        target="_blank
+        "
+                      >
+                        <h3>{section.title2}</h3>{" "}
+                      </a>
+                    )}{" "}
+                  </div>
                   <p className="fst-italic">{section.text2}</p>
 
                   <ul>
-                    <a
-                      href="https://www.facebook.com/TIMUN.TBS"
-                      target="_blank
-                  "
-                      className="btn-get-started "
-                    >
-                      Learn More
-                    </a>
+                    {section.boolean2 ? (
+                      <Link
+                        onClick={componentDidMount}
+                        className="btn-get-started "
+                        to={section.link2}
+                      >
+                        Learn More
+                      </Link>
+                    ) : (
+                      <a
+                        href={section.link2}
+                        target="_blank
+        "
+                        className="btn-get-started "
+                      >
+                        Learn More
+                      </a>
+                    )}
                   </ul>
                 </div>
               </div>

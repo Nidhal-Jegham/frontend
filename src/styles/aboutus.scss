@@ -82,10 +82,10 @@
   color: rgb(30, 67, 86);
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #68a4c4;
+  border: 2px solid rgb(37, 94, 165);
 }
 .btn-get-started:hover {
-  background-color: #68a4c4;
+  background-color: rgb(37, 94, 165);
   animation-delay: 0.8s;
   color: white;
 
@@ -146,14 +146,6 @@
     font-weight: 400;
     text-align: center;
     font-size: 45px;
-  }
-  h3:after {
-    position: relative;
-    left: 40%;
-    width: 20vw;
-    content: " ";
-    display: block;
-    border: 0.5px solid #68a4c4;
   }
 
   h4 {
@@ -306,14 +298,7 @@
   font-size: 45px;
   font-weight: 400;
 }
-.breadcrumbs h3:after {
-  position: relative;
-  left: 37%;
-  width: 20vw;
-  content: " ";
-  display: block;
-  border: 0.5px solid #68a4c4;
-}
+
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
@@ -490,4 +475,7 @@
 
 .board h3 {
   color: #183341;
+}
+.aboutIMG {
+  aspect-ratio: 3/2;
 }

@@ -242,7 +242,7 @@
   position: relative;
   padding-top: 2%;
   top: 79px;
-  background: rgb(30, 67, 86);
+  background: rgba(20, 51, 90, 1);
   overflow-y: auto;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -251,6 +251,38 @@
   li {
     margin-bottom: 10px;
   }
+}
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 2s;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top-active:hover {
+  background: rgba(20, 51, 90, 1);
+  color: #fff;
+}
+.back-to-top-active {
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+  position: fixed;
+  visibility: visible;
+  opacity: 1;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: rgb(37, 94, 165);
+  width: 40px;
+  height: 40px;
+  transition: all 0.4s;
 }
 
 .navbar-mobile a,

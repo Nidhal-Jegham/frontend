@@ -50,10 +50,10 @@ body {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #68a4c4;
+  border: 2px solid rgb(37, 94, 165);
 }
 #articles .btn-get-started:hover {
-  background: #68a4c4;
+  background: rgb(37, 94, 165);
   color: #fff;
   text-decoration: none;
 }
@@ -85,8 +85,8 @@ body {
 }
 .title h3:after {
   position: relative;
-  left: 40%;
-  width: 20vw;
+  left: 5%;
+  width: 90vw;
   content: " ";
   display: block;
   border: 0.5px solid #68a4c4;
