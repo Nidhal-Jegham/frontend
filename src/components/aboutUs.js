@@ -53,7 +53,7 @@ const AboutUs = ({ loading, setLoading }) => {
               <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
                 <div class="icon-box icon-box-blue">
                   <div class="icon">
-                    <i class="bx bx-lemon"></i>
+                    <i class="bi bi-lightbulb"></i>
                   </div>
                   <h4 class="title">
                     <a href="">Innovation</a>
