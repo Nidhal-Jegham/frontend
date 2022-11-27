@@ -77,13 +77,15 @@ body {
 }
 .title h3 {
   color: rgba(20, 51, 90, 1);
-
   margin-top: 10vh;
+
   font-weight: 400;
   text-align: center;
   font-size: 45px;
 }
 .title h3:after {
+  margin-top: 25px;
+
   position: relative;
   left: 5%;
   width: 90vw;
