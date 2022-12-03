@@ -22,6 +22,7 @@ import SGuidesAdmin from "./Admin/pages/sguides-admin";
 import EventsAdmin from "./Admin/pages/events-admin";
 import ArticleAdmin from "./Admin/pages/articles-admin";
 import NotFound from "./pages/404";
+import ArticleSingle from "./pages/Article-single";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -41,6 +42,11 @@ function App() {
           path="articles"
           element={<Articles loading={loading} setLoading={setLoading} />}
         />
+        <Route
+          path="article"
+          element={<ArticleSingle loading={loading} setLoading={setLoading} />}
+        />
+
         <Route
           path="events"
           element={<Events loading={loading} setLoading={setLoading} />}

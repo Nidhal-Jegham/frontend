@@ -3,6 +3,7 @@ import "../styles/article.scss";
 
 import Article from "../components/article";
 import { useState, useEffect, useRef } from "react";
+import ArticleSingle from "./Article-single";
 
 function Articles({ setLoading, loading }) {
   const ArticleRef = useRef();

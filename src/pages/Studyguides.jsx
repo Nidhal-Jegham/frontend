@@ -64,7 +64,7 @@ function SGuides({ loading, setLoading }) {
         setLoading(false);
       })
       .catch((err) => console.log(err));
-    fetch(`${process.env.REACT_APP_API_URL}/events`)
+    fetch(`https://timunservices.onrender.com/events`)
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);
