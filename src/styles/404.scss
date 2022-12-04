@@ -3,18 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 25%;
-  left: 35%;
+  text-align: center;
+  min-height: 100vh;
+
   img {
-    width: 60%;
-    margin-bottom: 10px;
+    width: 200px;
   }
   h3 {
-    font-size: 50px;
+    font-size: 25px;
   }
   .link {
     padding: 10px;
-    font-size: 40px;
+    font-size: 20px;
   }
 }
