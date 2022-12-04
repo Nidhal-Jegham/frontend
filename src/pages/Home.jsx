@@ -5,12 +5,25 @@ import "../styles/home.scss";
 
 const Home = ({ setLoading, loading }) => {
   const AboutUsRef = useRef();
-
+  const [team, setTeam] = useState([]);
+  const [about, setAbout] = useState([]);
   const LearnMore = () => {
     AboutUsRef.current.scrollIntoView({ behavior: "smooth" });
   };
   useEffect(() => {
-    setLoading(false);
+    setLoading(true);
+    fetch("https://timunservices.onrender.com/home/teams")
+      .then((res) => res.json())
+      .then((data) => {
+        setTeam(data);
+      });
+    fetch("https://timunservices.onrender.com/home")
+      .then((res) => res.json())
+      .then((data) => {
+        setAbout(data);
+        setLoading(false);
+      })
+      .catch((err) => console.log(err));
   }, []);
   if (loading) {
     return null;
@@ -34,7 +47,12 @@ const Home = ({ setLoading, loading }) => {
         </div>
       </section>
       <div ref={AboutUsRef}>
-        <AboutUs loading={loading} setLoading={setLoading} />
+        <AboutUs
+          team={team}
+          about={about}
+          loading={loading}
+          setLoading={setLoading}
+        />
       </div>
     </div>
   );

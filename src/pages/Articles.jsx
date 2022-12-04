@@ -3,7 +3,6 @@ import "../styles/article.scss";
 
 import Article from "../components/article";
 import { useState, useEffect, useRef } from "react";
-import ArticleSingle from "./Article-single";
 
 function Articles({ setLoading, loading }) {
   const ArticleRef = useRef();
@@ -14,7 +13,7 @@ function Articles({ setLoading, loading }) {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    setLoading(false);
+    setLoading(true);
     fetch("https://timunservices.onrender.com/articles")
       .then((res) => res.json())
       .then((data) => {

@@ -4,15 +4,20 @@ import "../styles/studyguide.scss";
 
 function ArticleSingle({ setLoading }) {
   const [articless, setArticles] = useState([]);
+  const articleRef = useRef();
+
+  const LearnMore = () => {
+    articleRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   useEffect(() => {
-    setLoading(true);
+    setLoading(false);
     fetch("https://timunservices.onrender.com/articles")
       .then((res) => res.json())
       .then((data) => {
         setArticles(data);
-
         setLoading(false);
       })
+
       .catch((err) => console.log(err));
   }, []);
 
@@ -20,7 +25,7 @@ function ArticleSingle({ setLoading }) {
     <div>
       <section
         id="article"
-        className="d-flex justify-cntent-center align-items-center"
+        className=" a d-flex justify-cntent-center align-items-center"
         style={{
           background: `linear-gradient(
             to right,
@@ -38,19 +43,26 @@ function ArticleSingle({ setLoading }) {
             <div className="col-xl-8">
               <h2>Arab Spring From Tunisia to the Arab World </h2>
               <h3>Roudaina Hamrouni</h3>
-              <a href className="btn-get-started ">
+              <a href className="btn-get-started " onClick={LearnMore}>
                 Know More
               </a>
             </div>
           </div>
         </div>
       </section>
-      <main id="main">
-        <section id="blog" className="blog">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-8 entries">
+      <main ref={articleRef} id="main">
+        <section id="blog" className="blog d-flex justify-content-center">
+          <div className="container d-flex justify-content-center">
+            <div className="row d-flex justify-content-center">
+              <div className="col-md-8 d-flex justify-content-center align-items-stretch">
                 <article className="entry entry-single">
+                  <div class="entry-img">
+                    <img
+                      src="https://cdn.cfr.org/sites/default/files/styles/full_width_xl/public/image/2020/12/arabspring_0.jpg.webp"
+                      alt
+                      className="img-fluid"
+                    />{" "}
+                  </div>
                   <h2 class="entry-title">
                     <a href="blog-single.html">
                       Arab Spring From Tunisia to the Arab World
@@ -59,6 +71,7 @@ function ArticleSingle({ setLoading }) {
 
                   <div class="entry-meta"></div>
                   <div className="entry-content">
+                    <div class="entry-img"></div>
                     <p>
                       <i></i>
                     </p>
@@ -89,11 +102,34 @@ function ArticleSingle({ setLoading }) {
                       they were also harassed, humiliated, evicted from their
                       homes, and imprisoned for no apparent cause.
                     </p>
+                    <div class="mid-img">
+                      <img
+                        src="https://cdn.cfr.org/sites/default/files/styles/full_width_xl/public/image/2020/12/arabspring_0.jpg.webp"
+                        alt
+                        className="img-fluid"
+                      />{" "}
+                    </div>
+                    <p>
+                      The Tunisian Revolution, commonly known as the “Jasmine
+                      Revolution,” lasted 28 days full of demonstrations,
+                      contests, and rebellion events. As every event has its
+                      drivers, the Tunisian Revolution was the consequence of
+                      numerous accumulated issues that the citizens have been
+                      dealing with for many decades. There were other elements,
+                      including unemployment, food inflation, corruption, a lack
+                      of political freedom, especially freedom of expression,
+                      and bad living circumstances. However, dictatorship played
+                      a significant effect in the development of these
+                      variables. It wasn’t simply that individuals were
+                      forbidden from expressing their opinions explicitly, but
+                      they were also harassed, humiliated, evicted from their
+                      homes, and imprisoned for no apparent cause.
+                    </p>
                   </div>
                 </article>
               </div>
               {/* End blog entries list */}
-              <div className="col-lg-4">
+              <div className="col-lg-4 d-flex justify-content-center align-items-stretch">
                 <div className="sidebar">
                   <h3 className="sidebar-title">Recent Articles</h3>
                   <div className="sidebar-item recent-posts">

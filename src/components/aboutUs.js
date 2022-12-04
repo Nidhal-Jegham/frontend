@@ -3,28 +3,11 @@ import "../styles/aboutus.scss";
 import { Link } from "react-router-dom";
 import CountDown from "./countdown";
 
-const AboutUs = ({ loading, setLoading }) => {
+const AboutUs = ({ loading, setLoading, team, about }) => {
   const componentDidMount = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  const [team, setTeam] = useState([]);
-  const [about, setAbout] = useState([]);
 
-  useEffect(() => {
-    setLoading(false);
-    fetch("https://timunservices.onrender.com/home/teams")
-      .then((res) => res.json())
-      .then((data) => {
-        setTeam(data);
-      });
-    fetch("https://timunservices.onrender.com/home")
-      .then((res) => res.json())
-      .then((data) => {
-        setAbout(data);
-        setLoading(false);
-      })
-      .catch((err) => console.log(err));
-  }, []);
   if (loading) return null;
 
   return (
