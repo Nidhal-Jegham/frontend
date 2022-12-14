@@ -40,6 +40,7 @@ function Pages({
         >
           <i class="bi bi-chevron-double-left"></i>
         </button>
+
         {sGuides
 
           .filter((sguide) =>
@@ -67,7 +68,7 @@ function Pages({
           )
 
           .map((studyguide) => {
-            return sGuides
+            return (sGuides
 
               .filter((sguide) =>
                 sguide.title
@@ -80,7 +81,59 @@ function Pages({
               .indexOf(studyguide) /
               4 +
               1 ===
-              sGuidePage - 2 ||
+              sGuidePage - 4 &&
+              sGuidePage >=
+                Math.ceil(
+                  sGuides
+                    .filter((sguide) =>
+                      sguide.title
+                        .toLowerCase()
+                        .includes(SearchSguide.toLocaleLowerCase())
+                    )
+                    .filter((sguide) => sguide.language.includes(language))
+                    .filter((sguide) => sguide.event.includes(eventName))
+                    .length / 4
+                )) ||
+              (sGuides
+
+                .filter((sguide) =>
+                  sguide.title
+                    .toLowerCase()
+                    .includes(SearchSguide.toLocaleLowerCase())
+                )
+                .filter((sguide) => sguide.language.includes(language))
+                .filter((sguide) => sguide.event.includes(eventName))
+
+                .indexOf(studyguide) /
+                4 +
+                1 ===
+                sGuidePage - 3 &&
+                sGuidePage + 1 >=
+                  Math.ceil(
+                    sGuides
+                      .filter((sguide) =>
+                        sguide.title
+                          .toLowerCase()
+                          .includes(SearchSguide.toLocaleLowerCase())
+                      )
+                      .filter((sguide) => sguide.language.includes(language))
+                      .filter((sguide) => sguide.event.includes(eventName))
+                      .length / 4
+                  )) ||
+              sGuides
+
+                .filter((sguide) =>
+                  sguide.title
+                    .toLowerCase()
+                    .includes(SearchSguide.toLocaleLowerCase())
+                )
+                .filter((sguide) => sguide.language.includes(language))
+                .filter((sguide) => sguide.event.includes(eventName))
+
+                .indexOf(studyguide) /
+                4 +
+                1 ===
+                sGuidePage - 2 ||
               sGuides
 
                 .filter((sguide) =>
@@ -136,7 +189,37 @@ function Pages({
                 .indexOf(studyguide) /
                 4 +
                 1 ===
-                sGuidePage + 2 ? (
+                sGuidePage + 2 ||
+              (sGuides
+
+                .filter((sguide) =>
+                  sguide.title
+                    .toLowerCase()
+                    .includes(SearchSguide.toLocaleLowerCase())
+                )
+                .filter((sguide) => sguide.language.includes(language))
+                .filter((sguide) => sguide.event.includes(eventName))
+
+                .indexOf(studyguide) /
+                4 +
+                1 ===
+                sGuidePage + 3 &&
+                sGuidePage - 1 <= 1) ||
+              (sGuides
+
+                .filter((sguide) =>
+                  sguide.title
+                    .toLowerCase()
+                    .includes(SearchSguide.toLocaleLowerCase())
+                )
+                .filter((sguide) => sguide.language.includes(language))
+                .filter((sguide) => sguide.event.includes(eventName))
+
+                .indexOf(studyguide) /
+                4 +
+                1 ===
+                sGuidePage + 4 &&
+                sGuidePage - 2 < 0) ? (
               <li>
                 <button
                   className={
@@ -192,6 +275,7 @@ function Pages({
               </li>
             ) : null;
           })}
+
         <button
           onClick={() => {
             UpPage();
