@@ -187,6 +187,18 @@ body {
 .magazine .entry .entry-content .read-more button:hover {
   background: rgb(37, 94, 165);
 }
+.magazine .entry .entry-content .read-more a {
+  display: inline-block;
+  background: rgba(20, 51, 90, 1);
+  color: #fff;
+  padding: 6px 20px;
+  transition: 0.3s;
+  font-size: 14px;
+  border: none;
+}
+.magazine .entry .entry-content .read-more a:hover {
+  background: rgb(37, 94, 165);
+}
 .magazine {
   padding: 40px 0 20px 0;
 }
@@ -308,17 +320,7 @@ body {
   -moz-text-align-last: right;
   text-align-last: right;
 }
-.magazine .entry .entry-content .read-more a {
-  display: inline-block;
-  background: #68a4c4;
-  color: #fff;
-  padding: 6px 20px;
-  transition: 0.3s;
-  font-size: 14px;
-}
-.magazine .entry .entry-content .read-more a:hover {
-  background: #7aafcb;
-}
+
 .magazine .entry .entry-content h3 {
   font-size: 22px;
   margin-top: 30px;

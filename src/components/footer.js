@@ -34,10 +34,10 @@ const Footer = () => {
                     ></img>
                   </div>
                   <div className="col-lg-3">
-                    <img className="image" src="/assets/img/logopaq.png"></img>
-                  </div>
-                  <div className="col-lg-3">
                     <img className="image" src="/assets/img/wto.png"></img>
+                  </div>{" "}
+                  <div className="col-lg-3">
+                    <img className="image" src="/assets/img/photolab.png"></img>
                   </div>{" "}
                 </div>
               </div>
@@ -97,7 +97,7 @@ const Footer = () => {
                   href="https://mail.google.com/mail/u/0/#inbox?compose=new"
                   target="_blank"
                 >
-                  timuntbs@gmail.com
+                  timun.tbs@gmail.com
                 </a>
                 <br />
               </p>
@@ -136,7 +136,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="container d-flex  justify-content-center">
+      <div className="container">
+        <div class="copyright">
+          &copy; Copyright{" "}
+          <strong>
+            <span>TIMUN TBS 2022</span>
+          </strong>
+          . All Rights Reserved
+        </div>
         <div className="credits">
           Developed by{" "}
           <a
@@ -144,8 +151,8 @@ const Footer = () => {
             target="_blank"
           >
             Nidhal Jegham
-          </a>{" "}
-          &{" "}
+          </a>
+          {"   "}&{"   "}
           <a
             href="https://www.linkedin.com/in/wael-dghim-99b807235/"
             target="_blank"
