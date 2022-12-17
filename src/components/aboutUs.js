@@ -24,7 +24,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                     <i class="bi bi-globe2"></i>
                   </div>
                   <h4 class="title">
-                    <a href="">Diplomacy</a>
+                    <a href>Diplomacy</a>
                   </h4>
                   <p class="description">
                     We value the art of tact and diplomacy and aim to perfect
@@ -39,7 +39,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                     <i class="bi bi-lightbulb"></i>
                   </div>
                   <h4 class="title">
-                    <a href="">Innovation</a>
+                    <a href>Innovation</a>
                   </h4>
                   <p class="description">
                     We aim to develop a common sense on innovation in order to
@@ -55,7 +55,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                     <i class="bx bx-star"></i>
                   </div>
                   <h4 class="title">
-                    <a href="">Cooperation</a>
+                    <a href>Cooperation</a>
                   </h4>
                   <p class="description">
                     We value teamwork and aim to develop team players in order
@@ -71,7 +71,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                     <i class="bx bx-rocket"></i>
                   </div>
                   <h4 class="title">
-                    <a href="">Leadership</a>
+                    <a href>Leadership</a>
                   </h4>
                   <p class="description">
                     We aim to develop future leaders with numerous fundamental

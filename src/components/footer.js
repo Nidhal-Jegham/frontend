@@ -138,7 +138,7 @@ const Footer = () => {
       </div>
       <div className="container">
         <div class="copyright">
-          &copy; Copyright{" "}
+          &copy; Copyrights{" "}
           <strong>
             <span>TIMUN TBS 2022</span>
           </strong>
