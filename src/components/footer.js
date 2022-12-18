@@ -30,7 +30,7 @@ const Footer = () => {
                   <div className="col-lg-3">
                     <img
                       className="image"
-                      src="/assets/img/logo_website.png"
+                      src="https://res.cloudinary.com/daihyew9d/image/upload/v1671370734/logo_website_11zon_ytncp1.png"
                     ></img>
                   </div>
                   <div className="col-lg-3">
