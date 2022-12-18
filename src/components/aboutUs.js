@@ -127,7 +127,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
           <div className="row d-flex align-items-center">
             <div className="col-md-6">
               <img
-                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671366101/missionfamily_11zon_ugyire.jpg"
+                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671401052/missionfamilywebsite_11zon_qaqljd.jpg"
                 className="img-fluid aboutIMG"
                 alt
               />
@@ -167,7 +167,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
             {" "}
             <div className="col-md-5 order-1 order-md-2">
               <img
-                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671371436/green_11zon_1_bcmiug.jpg"
+                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671400935/green_11zon_zg0s7s.jpg"
                 className="img-fluid aboutIMG"
                 alt
               />
@@ -203,7 +203,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
           <div className="row d-flex align-items-center">
             <div className="col-md-6">
               <img
-                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671371209/events_11zon_1_1_ku9ozw.jpg"
+                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671400838/events_11zon_s4idnb.jpg"
                 className="img-fluid aboutIMG"
                 alt
               />
