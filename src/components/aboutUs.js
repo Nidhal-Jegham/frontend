@@ -85,104 +85,224 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
       </section>
       <hr></hr>
       <section className="about-us">
-        {about.map((section) => {
-          return (
-            <div className="container about-us ">
-              <div className="row d-flex align-items-center ">
-                {" "}
-                <div className="col-md-5 order-1 order-md-2">
-                  <img src={section.src1} className="img-fluid aboutIMG" alt />
-                </div>
-                <div className="col-md-7 pt-5 order-2 order-md-1  ">
-                  {" "}
-                  <div>
-                    {" "}
-                    {section.boolean1 ? (
-                      <Link onClick={componentDidMount} to={section.link1}>
-                        <h3>{section.title1}</h3>{" "}
-                      </Link>
-                    ) : (
-                      <a
-                        href={section.link1}
-                        target="_blank
-        "
-                      >
-                        <h3>{section.title1}</h3>{" "}
-                      </a>
-                    )}{" "}
-                  </div>
-                  <p className="fst-italic">{section.text1}</p>
-                  <ul>
-                    {section.boolean1 ? (
-                      <Link
-                        onClick={componentDidMount}
-                        className="btn-get-started "
-                        to={section.link1}
-                      >
-                        Learn More
-                      </Link>
-                    ) : (
-                      <a
-                        href={section.link1}
-                        target="_blank
-        "
-                        className="btn-get-started "
-                      >
-                        Learn More
-                      </a>
-                    )}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="row d-flex align-items-center">
-                <div className="col-md-6">
-                  <img src={section.src2} className="img-fluid aboutIMG" alt />
-                </div>
-                <div className="col-md-6   pt-5 ">
-                  <div>
-                    {" "}
-                    {section.boolean2 ? (
-                      <Link onClick={componentDidMount} to={section.link2}>
-                        <h3>{section.title2}</h3>{" "}
-                      </Link>
-                    ) : (
-                      <a
-                        href={section.link2}
-                        target="_blank
-        "
-                      >
-                        <h3>{section.title2}</h3>{" "}
-                      </a>
-                    )}{" "}
-                  </div>
-                  <p className="fst-italic">{section.text2}</p>
-
-                  <ul>
-                    {section.boolean2 ? (
-                      <Link
-                        onClick={componentDidMount}
-                        className="btn-get-started "
-                        to={section.link2}
-                      >
-                        Learn More
-                      </Link>
-                    ) : (
-                      <a
-                        href={section.link2}
-                        target="_blank
-        "
-                        className="btn-get-started "
-                      >
-                        Learn More
-                      </a>
-                    )}
-                  </ul>
-                </div>
-              </div>
+        {" "}
+        <div className="container about-us ">
+          <div className="row d-flex align-items-center ">
+            {" "}
+            <div className="col-md-5 order-1 order-md-2">
+              <img
+                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671369464/family-2_11zon_njetrf.jpg"
+                className="img-fluid aboutIMG"
+                alt
+              />
             </div>
-          );
-        })}
+            <div className="col-md-7 pt-5 order-2 order-md-1  ">
+              {" "}
+              <div>
+                {" "}
+                <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
+                  <h3>Who We Are</h3>{" "}
+                </a>
+              </div>
+              <p className="fst-italic">
+                TIMUN TBS is a student organization under the direct supervision
+                of an active community operating under the instructions of the
+                United Nations. Our club seeks to strengthen the skills of
+                students such as public speaking, academic knowledge,
+                international relations, and leadership.
+              </p>
+              <ul>
+                <a
+                  href="https://www.facebook.com/TIMUN.TBS"
+                  target="_blank
+        "
+                  className="btn-get-started "
+                >
+                  Learn More
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div className="row d-flex align-items-center">
+            <div className="col-md-6">
+              <img
+                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671366101/missionfamily_11zon_ugyire.jpg"
+                className="img-fluid aboutIMG"
+                alt
+              />
+            </div>
+            <div className="col-md-6   pt-5 ">
+              <div>
+                {" "}
+                <a
+                  href="https://www.facebook.com/TIMUN.TBS"
+                  target="_blank
+        "
+                >
+                  <h3>Our Vision</h3>{" "}
+                </a>
+              </div>
+              <p className="fst-italic">
+                To provide every TBS student with the fundamental skills to
+                integrate and Lead the international Community when facing
+                global Challenges.
+              </p>
+
+              <ul>
+                <a
+                  href="https://www.facebook.com/TIMUN.TBS"
+                  target="_blank
+        "
+                  className="btn-get-started "
+                >
+                  Learn More
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="container about-us ">
+          <div className="row d-flex align-items-center ">
+            {" "}
+            <div className="col-md-5 order-1 order-md-2">
+              <img
+                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671371436/green_11zon_1_bcmiug.jpg"
+                className="img-fluid aboutIMG"
+                alt
+              />
+            </div>
+            <div className="col-md-7 pt-5 order-2 order-md-1  ">
+              {" "}
+              <div>
+                {" "}
+                <a href="https://www.facebook.com/TIMUN.TBS" target="_blank">
+                  <h3>Our Mission</h3>{" "}
+                </a>
+              </div>
+              <p className="fst-italic">
+                TIMUN TBS is a student organization under the direct supervision
+                of an active community operating under the instructions of the
+                United Nations. Our club seeks to strengthen the skills of
+                students such as public speaking, academic knowledge,
+                international relations, and leadership.
+              </p>
+              <ul>
+                <a
+                  href="https://www.facebook.com/TIMUN.TBS"
+                  target="_blank
+        "
+                  className="btn-get-started "
+                >
+                  Learn More
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div className="row d-flex align-items-center">
+            <div className="col-md-6">
+              <img
+                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671371209/events_11zon_1_1_ku9ozw.jpg"
+                className="img-fluid aboutIMG"
+                alt
+              />
+            </div>
+            <div className="col-md-6   pt-5 ">
+              <div>
+                {" "}
+                <Link to="/events" onClick={componentDidMount}>
+                  <h3>Our Events</h3>{" "}
+                </Link>
+              </div>
+              <p className="fst-italic">
+                For those who are interested in the realm of diplomacy, eager to
+                test their public speaking and negotiation skills, want to
+                expand their academic knowledge and meet interesting people;
+                coming to our events is the perfect opportunity for you to
+                experience that and more.
+              </p>
+
+              <ul>
+                <Link
+                  onClick={componentDidMount}
+                  to="/events"
+                  className="btn-get-started "
+                >
+                  Learn More
+                </Link>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="container about-us ">
+          <div className="row d-flex align-items-center ">
+            {" "}
+            <div className="col-md-5 order-1 order-md-2">
+              <img
+                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671366029/committee_11zon_isbsxt.jpg"
+                className="img-fluid aboutIMG"
+                alt
+              />
+            </div>
+            <div className="col-md-7 pt-5 order-2 order-md-1  ">
+              {" "}
+              <div>
+                {" "}
+                <Link onClick={componentDidMount} to="/sguides">
+                  <h3>Our Study Guides</h3>{" "}
+                </Link>
+              </div>
+              <p className="fst-italic">
+                A deep dive into the world of politics, economics, and many
+                more. In our study guides, we tackle numerous subjects with high
+                informative value and immaculate academic skills.
+              </p>
+              <ul>
+                <Link
+                  onClick={componentDidMount}
+                  to="/sguides"
+                  className="btn-get-started "
+                >
+                  Learn More
+                </Link>
+              </ul>
+            </div>
+          </div>
+
+          <div className="row d-flex align-items-center">
+            <div className="col-md-6">
+              <img
+                src="https://res.cloudinary.com/daihyew9d/image/upload/v1671371495/magazines_11zon_1_zjhimo.jpg"
+                className="img-fluid aboutIMG"
+                alt
+              />
+            </div>
+            <div className="col-md-6   pt-5 ">
+              <div>
+                {" "}
+                <Link onClick={componentDidMount} to="/articles">
+                  <h3>Our Articles</h3>{" "}
+                </Link>
+              </div>
+              <p className="fst-italic">
+                TIMUN TBS contributes to the academic world with numerous
+                articles. On subjects ranging from cults to genetic engineering,
+                the creativity of our academics is limitless.
+              </p>
+
+              <ul>
+                <Link
+                  onClick={componentDidMount}
+                  to="/articles"
+                  className="btn-get-started "
+                >
+                  Learn More
+                </Link>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
       <hr></hr>
@@ -204,9 +324,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                         <a href={member.accounts.facebook} target="_blank">
                           <i className="bi bi-facebook" />
                         </a>
-                        <a href={member.accounts.insta} target="_blank">
-                          <i className="bi bi-instagram" />
-                        </a>
+
                         <a href={member.accounts.linkedin} target="_blank">
                           <i className="bi bi-linkedin" />
                         </a>

@@ -13,6 +13,10 @@ function Sidebar({
   sGuides,
   setSGuides,
 }) {
+  const DeleteSguide = () => {
+    setSearchSguide("");
+    setSGuidePage(1);
+  };
   useEffect(() => {
     setSGuidePage(1);
     fetch(`${process.env.REACT_APP_API_URL}/sguides`)
@@ -39,7 +43,7 @@ function Sidebar({
           onChange={(e) => setSearchSguide(e.target.value)}
           value={SearchSguide}
         ></input>
-        <button type="submit" onClick={() => setSearchSguide("")}>
+        <button type="submit" onClick={() => DeleteSguide()}>
           <i class="bi bi-x-lg"></i>
         </button>
       </div>

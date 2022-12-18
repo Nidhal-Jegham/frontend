@@ -11,17 +11,11 @@ const Home = ({ setLoading, loading }) => {
     AboutUsRef.current.scrollIntoView({ behavior: "smooth" });
   };
   useEffect(() => {
-    setLoading(true);
+    setLoading(false);
     fetch("https://timunservices.onrender.com/home/teams")
       .then((res) => res.json())
       .then((data) => {
         setTeam(data);
-      });
-    fetch("https://timunservices.onrender.com/home")
-      .then((res) => res.json())
-      .then((data) => {
-        setAbout(data);
-        setLoading(false);
       })
       .catch((err) => console.log(err));
   }, []);
