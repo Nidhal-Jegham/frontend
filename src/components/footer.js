@@ -30,7 +30,7 @@ const Footer = () => {
                   <div className="col-lg-3">
                     <img
                       className="image"
-                      src="/assets/img/logo_tbs-Vector.png"
+                      src="/assets/img/logo_website.png"
                     ></img>
                   </div>
                   <div className="col-lg-3">

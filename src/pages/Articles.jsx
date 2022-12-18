@@ -55,59 +55,6 @@ function Articles({ setLoading, loading }) {
                 <div className="active entry-img"></div>
                 <h2 className="entry-title">
                   <a
-                    href="https://drive.google.com/uc?export=view&id=1MsjYqR2SJ_UwcCPKrkkWFvyRCDIfNWDf"
-                    target="_blank"
-                  >
-                    TIMUN TBS Magazine First Edition
-                  </a>
-                </h2>
-                <div className="entry-meta">
-                  <ul>
-                    <li className="d-flex align-items-center">
-                      <i className="bi bi-person" />
-                      <span> TIMUN TBS Academics</span>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <i className="bi bi-clock" />{" "}
-                      <span>{"5/8/2021".toString().substring(0, 10)}</span>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <i className="bi bi-chat-dots" />{" "}
-                      <span>10{" article(s)"} </span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="entry-content">
-                  <p className="Active">
-                    Due to the COVID-19 wave, we all got -more or less- familiar
-                    with the medicine development process. However, the still
-                    ongoing rumors about this vaccine’s side effects, or the
-                    other’s inefficacy have proven that a drug’s effect can be
-                    misleading and unpredicted. This is exactly the case for
-                    Oslo Accords, this controversial series of interim
-                    agreements regarding the status of the West Bank & Gaza
-                    Strip, negotiated between the Palestine Liberation
-                    Organization (PLO) - the representative body of the
-                    Palestinian people- and Israel in 1993...
-                  </p>
-
-                  <div className="read-more">
-                    {" "}
-                    <a
-                      href="https://drive.google.com/uc?export=view&id=1MsjYqR2SJ_UwcCPKrkkWFvyRCDIfNWDf"
-                      target="_blank"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div className="col-xl-12 magazine">
-              <article className="entry entry-single">
-                <div className="active entry-img"></div>
-                <h2 className="entry-title">
-                  <a
                     href="https://drive.google.com/file/d/1iqwsO8wV_bikMZobngNHDYPUFGDJNno2/view?usp=sharing"
                     target="_blank"
                   >
@@ -149,6 +96,59 @@ function Articles({ setLoading, loading }) {
                     {" "}
                     <a
                       href="https://drive.google.com/file/d/1iqwsO8wV_bikMZobngNHDYPUFGDJNno2/view?usp=sharing_"
+                      target="_blank"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div className="col-xl-12 magazine">
+              <article className="entry entry-single">
+                <div className="active entry-img"></div>
+                <h2 className="entry-title">
+                  <a
+                    href="https://drive.google.com/uc?export=view&id=1MsjYqR2SJ_UwcCPKrkkWFvyRCDIfNWDf"
+                    target="_blank"
+                  >
+                    TIMUN TBS Magazine First Edition
+                  </a>
+                </h2>
+                <div className="entry-meta">
+                  <ul>
+                    <li className="d-flex align-items-center">
+                      <i className="bi bi-person" />
+                      <span> TIMUN TBS Academics</span>
+                    </li>
+                    <li className="d-flex align-items-center">
+                      <i className="bi bi-clock" />{" "}
+                      <span>{"5/8/2021".toString().substring(0, 10)}</span>
+                    </li>
+                    <li className="d-flex align-items-center">
+                      <i className="bi bi-chat-dots" />{" "}
+                      <span>10{" article(s)"} </span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="entry-content">
+                  <p className="Active">
+                    Due to the COVID-19 wave, we all got -more or less- familiar
+                    with the medicine development process. However, the still
+                    ongoing rumors about this vaccine’s side effects, or the
+                    other’s inefficacy have proven that a drug’s effect can be
+                    misleading and unpredicted. This is exactly the case for
+                    Oslo Accords, this controversial series of interim
+                    agreements regarding the status of the West Bank & Gaza
+                    Strip, negotiated between the Palestine Liberation
+                    Organization (PLO) - the representative body of the
+                    Palestinian people- and Israel in 1993...
+                  </p>
+
+                  <div className="read-more">
+                    {" "}
+                    <a
+                      href="https://drive.google.com/uc?export=view&id=1MsjYqR2SJ_UwcCPKrkkWFvyRCDIfNWDf"
                       target="_blank"
                     >
                       Read More
