@@ -11,7 +11,7 @@ const Home = ({ setLoading, loading }) => {
     AboutUsRef.current.scrollIntoView({ behavior: "smooth" });
   };
   useEffect(() => {
-    setLoading(false);
+    setLoading(true);
     fetch("https://timunservices.onrender.com/home/teams")
       .then((res) => res.json())
       .then((data) => {
