@@ -24,19 +24,25 @@ const Footer = () => {
               <h4>Our Partners</h4>
               <div className="d-flex justify-content-around align-items-stretch  ">
                 <div className="row d-flex justify-content-center align-items-stretch">
-                  <div className="col-lg-3">
+                  <div className="col-lg-2">
                     <img className="image" src="/assets/img/warda.png"></img>
                   </div>
-                  <div className="col-lg-3">
+                  <div className="col-lg-2">
                     <img
                       className="image"
                       src="https://res.cloudinary.com/daihyew9d/image/upload/v1671370734/logo_website_11zon_ytncp1.png"
                     ></img>
-                  </div>
-                  <div className="col-lg-3">
+                  </div>{" "}
+                  <div className="col-lg-2">
                     <img className="image" src="/assets/img/wto.png"></img>
                   </div>{" "}
-                  <div className="col-lg-3">
+                  <div className="col-lg-2">
+                    <img
+                      className="imageUNDP"
+                      src="https://res.cloudinary.com/daihyew9d/image/upload/v1671402141/UNDP-Logo-Blue-Large_1_oakic4.png"
+                    ></img>
+                  </div>{" "}
+                  <div className="col-lg-2">
                     <img className="image" src="/assets/img/photolab.png"></img>
                   </div>{" "}
                 </div>

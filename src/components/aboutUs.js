@@ -181,11 +181,9 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                 </a>
               </div>
               <p className="fst-italic">
-                TIMUN TBS is a student organization under the direct supervision
-                of an active community operating under the instructions of the
-                United Nations. Our club seeks to strengthen the skills of
-                students such as public speaking, academic knowledge,
-                international relations, and leadership.
+                Instruct students about the various aspects of Diplomacy and
+                Geopolitics alongside maintaining a sense of solidarity and
+                peer-learning inside the entity.
               </p>
               <ul>
                 <a
