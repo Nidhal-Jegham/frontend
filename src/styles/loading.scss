@@ -1,6 +1,25 @@
 body {
-  background: black;
+  background: rgb(255, 255, 255);
 }
+
+.notfound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+
+  img {
+    max-width: 200px;
+    -webkit-animation: rotating 3s linear infinite;
+    -moz-animation: rotating 3s linear infinite;
+    -ms-animation: rotating 3s linear infinite;
+    -o-animation: rotating 3s linear infinite;
+    animation: rotating 3s linear infinite;
+  }
+}
+
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
@@ -27,29 +46,5 @@ body {
     -webkit-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
-  }
-}
-.loading {
-  width: 10%;
-  position: absolute;
-  top: 40%;
-  left: 43%;
-  -webkit-animation: rotating 3s linear infinite;
-  -moz-animation: rotating 3s linear infinite;
-  -ms-animation: rotating 3s linear infinite;
-  -o-animation: rotating 3s linear infinite;
-  animation: rotating 3s linear infinite;
-}
-@media (max-width: 1500px) {
-  .loading {
-    width: 40%;
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    -webkit-animation: rotating 3s linear infinite;
-    -moz-animation: rotating 3s linear infinite;
-    -ms-animation: rotating 3s linear infinite;
-    -o-animation: rotating 3s linear infinite;
-    animation: rotating 3s linear infinite;
   }
 }
