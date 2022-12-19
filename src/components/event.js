@@ -35,13 +35,18 @@ const Event = (props) => {
                   props.event.sponsors.length - 1
                 ) {
                   return (
-                    <span>
+                    <span key={props.event.sponsors.indexOf(sponsor)}>
                       {sponsor}
                       {" /"}
                     </span>
                   );
                 }
-                return <span> {sponsor}</span>;
+                return (
+                  <span key={props.event.sponsors.indexOf(sponsor)}>
+                    {" "}
+                    {sponsor}
+                  </span>
+                );
               })}
             </span>
           </p>

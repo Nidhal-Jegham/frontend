@@ -56,7 +56,7 @@ function SGuides({ loading, setLoading }) {
     setEventName("");
     setLanguage("");
     setSGuidePage(1);
-    fetch("https://timunservices.onrender.com/sguides")
+    fetch("https://www.timunservices.ovh/sguides")
       .then((res) => res.json())
       .then((data) => {
         setSGuides(data);
@@ -64,7 +64,7 @@ function SGuides({ loading, setLoading }) {
         setLoading(false);
       })
       .catch((err) => console.log(err));
-    fetch(`https://timunservices.onrender.com/events`)
+    fetch(`https://www.timunservices.ovh/events`)
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);
@@ -84,7 +84,7 @@ function SGuides({ loading, setLoading }) {
             <div className="col-xl-8">
               <h2>Sharing Academic Knowledge </h2>
               <h3>TIMUN TBS</h3>
-              <a onClick={LearnMore} href className="btn-get-started ">
+              <a onClick={LearnMore} className="btn-get-started ">
                 Know More
               </a>
             </div>
@@ -147,11 +147,14 @@ function SGuides({ loading, setLoading }) {
                 )
 
                 .map((studyguide) => {
-                  return <Studyguide studyguide={studyguide} />;
+                  return (
+                    <Studyguide key={studyguide._id} studyguide={studyguide} />
+                  );
                 })}
             </div>
             <div className="col-lg-4 block  d-flex justify-content-center ">
               <Sidebar
+                key={changeEvent}
                 changeEvent={changeEvent}
                 changeLanguage={changeLanguage}
                 SearchSguide={SearchSguide}
@@ -169,6 +172,7 @@ function SGuides({ loading, setLoading }) {
         </div>
       </section>
       <Pages
+        key={setEvents}
         setEvents={setEvents}
         setSGuides={setSGuides}
         SearchSguide={SearchSguide}

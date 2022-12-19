@@ -35,7 +35,7 @@ function Articles({ setLoading, loading }) {
             <div className="col-xl-8">
               <h2>Diplomacy of The Future </h2>
               <h3>TIMUN TBS</h3>
-              <a onClick={LearnMore} href className="btn-get-started ">
+              <a onClick={LearnMore} className="btn-get-started ">
                 Know More
               </a>
             </div>
@@ -161,6 +161,7 @@ function Articles({ setLoading, loading }) {
               const subjects = article.articles;
               return (
                 <Article
+                  key={article._id}
                   article={article}
                   subjects={subjects}
                   articleNames={article.articles}

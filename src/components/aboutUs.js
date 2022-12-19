@@ -307,7 +307,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
           <div className="row d-flex align-items-center ">
             {team.map((member) => {
               return (
-                <div className="col-lg-3  ">
+                <div key={member._id} className="col-lg-3  ">
                   <div className="member">
                     <div className="member-img d-flex justify-content-center">
                       <img src={member.src} className="img-fluid" />

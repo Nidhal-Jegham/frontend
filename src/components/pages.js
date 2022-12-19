@@ -220,7 +220,7 @@ function Pages({
                 1 ===
                 sGuidePage + 4 &&
                 sGuidePage - 2 < 0) ? (
-              <li>
+              <li key={studyguide._id}>
                 <button
                   className={
                     sGuidePage ===

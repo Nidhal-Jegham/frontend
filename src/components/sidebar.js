@@ -19,13 +19,13 @@ function Sidebar({
   };
   useEffect(() => {
     setSGuidePage(1);
-    fetch(`${process.env.REACT_APP_API_URL}/sguides`)
+    fetch(`https://www.timunservices.ovh/sguides`)
       .then((res) => res.json())
       .then((data) => {
         setSGuides(data);
       })
       .catch((err) => console.log(err));
-    fetch(`${process.env.REACT_APP_API_URL}/events`)
+    fetch(`https://www.timunservices.ovh/events`)
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);
@@ -168,7 +168,7 @@ function Sidebar({
           {events
             .filter((event) => events.indexOf(event) < 5)
             .map((event) => (
-              <div className="post-item clearfix">
+              <div key={event._id} className="post-item clearfix">
                 <img src={event.cover} alt="..." />{" "}
                 <h4>
                   <a href={event.drive} target="_blank">

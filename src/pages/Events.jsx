@@ -44,7 +44,13 @@ function Events({ loading, setLoading }) {
                 .filter((event) => event.status === "active")
                 .map((event) => {
                   if (current) {
-                    return <CountDown setCurrent={setCurrent} event={event} />;
+                    return (
+                      <CountDown
+                        key={event._id}
+                        setCurrent={setCurrent}
+                        event={event}
+                      />
+                    );
                   } else {
                   }
                 })}
@@ -56,7 +62,7 @@ function Events({ loading, setLoading }) {
                   <h3>TIMUN TBS</h3>
                 </div>
               )}
-              <a onClick={LearnMore} href className="btn-get-started ">
+              <a onClick={LearnMore} className="btn-get-started ">
                 Know More
               </a>
             </div>
@@ -103,7 +109,7 @@ function Events({ loading, setLoading }) {
                   .includes(SearchEvent.toLocaleLowerCase())
               )
               .map((event) => (
-                <Event event={event} />
+                <Event key={event._id} event={event} />
               ))}
           </div>
         </div>
