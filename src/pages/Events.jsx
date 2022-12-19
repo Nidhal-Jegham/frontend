@@ -72,7 +72,7 @@ function Events({ loading, setLoading }) {
           <section className="col-md-6 col-lg-6  ">
             <h3>Our events</h3>
           </section>
-          <div class="col-md-6 col-lg-3 search-bar ">
+          <div className="col-md-6 col-lg-3 search-bar ">
             <input
               type="text"
               placeholder="Search Events"
@@ -85,7 +85,7 @@ function Events({ loading, setLoading }) {
                 setSearchEvent("");
               }}
             >
-              <i class="bi bi-x-lg"></i>
+              <i className="bi bi-x-lg"></i>
             </button>
           </div>
         </div>

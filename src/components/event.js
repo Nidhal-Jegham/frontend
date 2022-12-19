@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Event = (props) => {
   const date = new Date(props.event.date).toString().substring(0, 15);
   return (
     <div className="col-md-6 d-flex align-items-stretch">
-      <div class="card">
-        <div class="card-img">
+      <div className="card">
+        <div className="card-img">
           <img src={props.event.cover} alt="..."></img>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">
+        <div className="card-body">
+          <h5 className="card-title">
             <a href={props.event.drive} target="_blank">
               {props.event.name}
             </a>
           </h5>
-          <p class="card-text">{props.event.description}</p>
+          <p className="card-text">{props.event.description}</p>
 
           <h6 className="card-text ">
             {" "}
@@ -45,13 +45,13 @@ const Event = (props) => {
               })}
             </span>
           </p>
-          <div class="read-more">
+          <div className="read-more">
             <a href={props.event.drive} target="_blank">
-              <i class="bi bi-arrow-right"></i> Read More
+              <i className="bi bi-arrow-right"></i> Read More
             </a>
           </div>
 
-          <div class="read-more">
+          <div className="read-more">
             {" "}
             {props.event.aftermovie != "" ? (
               <a className="  " href={props.event.aftermovie} target="_blank">

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import "../styles/studyguide.scss";
 
 function Pages({
@@ -17,8 +17,8 @@ function Pages({
   }, []);
 
   return (
-    <div class="pages">
-      <ul class="justify-content-center">
+    <div className="pages">
+      <ul className="justify-content-center">
         <button
           className={
             sGuidePage === 1 ||
@@ -38,7 +38,7 @@ function Pages({
             DownPage();
           }}
         >
-          <i class="bi bi-chevron-double-left"></i>
+          <i className="bi bi-chevron-double-left"></i>
         </button>
 
         {sGuides
@@ -307,7 +307,7 @@ function Pages({
               : "upDown"
           }
         >
-          <i class="bi bi-chevron-double-right"></i>
+          <i className="bi bi-chevron-double-right"></i>
         </button>
       </ul>
     </div>

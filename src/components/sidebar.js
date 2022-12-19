@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect } from "react";
 import "../styles/studyguide.scss";
 function Sidebar({
   SearchSguide,
@@ -34,9 +34,9 @@ function Sidebar({
   }, []);
 
   return (
-    <div class="sidebar">
-      <h3 class="sidebar-title">Search</h3>
-      <div class="sidebar-item search-form">
+    <div className="sidebar">
+      <h3 className="sidebar-title">Search</h3>
+      <div className="sidebar-item search-form">
         <input
           type="text"
           placeholder="Search Study Guide"
@@ -44,12 +44,12 @@ function Sidebar({
           value={SearchSguide}
         ></input>
         <button type="submit" onClick={() => DeleteSguide()}>
-          <i class="bi bi-x-lg"></i>
+          <i className="bi bi-x-lg"></i>
         </button>
       </div>
 
-      <h3 class="sidebar-title">Languages</h3>
-      <div class="sidebar-item categories">
+      <h3 className="sidebar-title">Languages</h3>
+      <div className="sidebar-item categories">
         <ul>
           <li
             onClick={() => changeLanguage("")}
@@ -87,8 +87,8 @@ function Sidebar({
           </li>
         </ul>
       </div>
-      <h3 class="sidebar-title">Events</h3>
-      <div class="sidebar-item categories">
+      <h3 className="sidebar-title">Events</h3>
+      <div className="sidebar-item categories">
         <ul>
           <li
             onClick={() => changeEvent("")}

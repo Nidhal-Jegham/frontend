@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/nav.scss";
 
-const Navbar = (props) => {
+const Navbar = () => {
   const [mobile, setMobile] = useState(true);
   const componentDidMount = () => {
     window.scrollTo({ top: 0 });
@@ -41,27 +41,27 @@ const Navbar = (props) => {
   return (
     <div>
       <div
-        class={
+        className={
           navbar
             ? "back-to-top-active d-flex align-items-center justify-content-center"
             : "back-to-top d-flex align-items-center justify-content-center"
         }
         onClick={componentDidMount}
       >
-        <i class="bi bi-arrow-up-short"></i>
+        <i className="bi bi-arrow-up-short"></i>
       </div>
       <header
         id={navbar ? "header-scrolled" : "header"}
-        class="fixed-top d-flex align-items-center header-transparent"
+        className="fixed-top d-flex align-items-center header-transparent"
       >
-        <div class="container d-flex justify-content-between align-items-center">
-          <div class="logo" onClick={componentDidMount}>
+        <div className="container d-flex justify-content-between align-items-center">
+          <div className="logo" onClick={componentDidMount}>
             {" "}
             <Link className="navbar-comp" to="/">
               <img
                 src="assets/img/white-logo.png"
                 alt=""
-                class="img-fluid"
+                className="img-fluid"
               ></img>
             </Link>
           </div>

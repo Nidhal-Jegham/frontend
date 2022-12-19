@@ -103,9 +103,9 @@ function SGuides({ loading, setLoading }) {
       <div className="Study-title-after"></div>
 
       <section>
-        <div class=" d-flex justify-content-center">
-          <div class="row">
-            <div class="col-lg-8 entries ">
+        <div className=" d-flex justify-content-center">
+          <div className="row">
+            <div className="col-lg-8 entries ">
               {sGuides
 
                 .filter((sguide) =>
@@ -150,7 +150,7 @@ function SGuides({ loading, setLoading }) {
                   return <Studyguide studyguide={studyguide} />;
                 })}
             </div>
-            <div class="col-lg-4 block  d-flex justify-content-center ">
+            <div className="col-lg-4 block  d-flex justify-content-center ">
               <Sidebar
                 changeEvent={changeEvent}
                 changeLanguage={changeLanguage}

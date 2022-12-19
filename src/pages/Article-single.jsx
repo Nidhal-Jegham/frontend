@@ -56,22 +56,22 @@ function ArticleSingle({ setLoading }) {
             <div className="row d-flex justify-content-center">
               <div className="col-md-8 d-flex justify-content-center align-items-stretch">
                 <article className="entry entry-single">
-                  <div class="entry-img">
+                  <div className="entry-img">
                     <img
                       src="https://cdn.cfr.org/sites/default/files/styles/full_width_xl/public/image/2020/12/arabspring_0.jpg.webp"
                       alt
                       className="img-fluid"
                     />{" "}
                   </div>
-                  <h2 class="entry-title">
+                  <h2 className="entry-title">
                     <a href="blog-single.html">
                       Arab Spring From Tunisia to the Arab World
                     </a>
                   </h2>
 
-                  <div class="entry-meta"></div>
+                  <div className="entry-meta"></div>
                   <div className="entry-content">
-                    <div class="entry-img"></div>
+                    <div className="entry-img"></div>
                     <p>
                       <i></i>
                     </p>
@@ -102,7 +102,7 @@ function ArticleSingle({ setLoading }) {
                       they were also harassed, humiliated, evicted from their
                       homes, and imprisoned for no apparent cause.
                     </p>
-                    <div class="mid-img">
+                    <div className="mid-img">
                       <img
                         src="https://cdn.cfr.org/sites/default/files/styles/full_width_xl/public/image/2020/12/arabspring_0.jpg.webp"
                         alt

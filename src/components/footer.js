@@ -143,7 +143,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container">
-        <div class="copyright">
+        <div className="copyright">
           &copy; Copyrights{" "}
           <strong>
             <span>TIMUN TBS 2022</span>

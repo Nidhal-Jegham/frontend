@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../styles/aboutus.scss";
 import { Link } from "react-router-dom";
-import CountDown from "./countdown";
 
 const AboutUs = ({ loading, setLoading, team, about }) => {
   const componentDidMount = () => {
@@ -12,36 +11,36 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
 
   return (
     <div>
-      <section class="values">
+      <section className="values">
         <h3>Our values</h3>
 
-        <div class="container">
+        <div className="container">
           <div className="d-flex justify-content-center">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-                <div class="icon-box ">
-                  <div class="icon">
-                    <i class="bi bi-globe2"></i>
+            <div className="row d-flex align-items-center">
+              <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
+                <div className="icon-box ">
+                  <div className="icon">
+                    <i className="bi bi-globe2"></i>
                   </div>
-                  <h4 class="title">
-                    <a href>Diplomacy</a>
+                  <h4 className="title">
+                    <div>Diplomacy</div>
                   </h4>
-                  <p class="description">
+                  <p className="description">
                     We value the art of tact and diplomacy and aim to perfect
                     the negotiation and communication skills of students.
                   </p>
                 </div>
               </div>
 
-              <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-                <div class="icon-box icon-box-blue">
-                  <div class="icon">
-                    <i class="bi bi-lightbulb"></i>
+              <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
+                <div className="icon-box icon-box-blue">
+                  <div className="icon">
+                    <i className="bi bi-lightbulb"></i>
                   </div>
-                  <h4 class="title">
-                    <a href>Innovation</a>
+                  <h4 className="title">
+                    <div>Innovation</div>
                   </h4>
-                  <p class="description">
+                  <p className="description">
                     We aim to develop a common sense on innovation in order to
                     develop the critical and solution oriented mindsets of
                     students.
@@ -49,15 +48,15 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                 </div>
               </div>
 
-              <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-                <div class="icon-box icon-box-blue">
-                  <div class="icon">
-                    <i class="bx bx-star"></i>
+              <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
+                <div className="icon-box icon-box-blue">
+                  <div className="icon">
+                    <i className="bx bx-star"></i>
                   </div>
-                  <h4 class="title">
-                    <a href>Cooperation</a>
+                  <h4 className="title">
+                    <div>Cooperation</div>
                   </h4>
-                  <p class="description">
+                  <p className="description">
                     We value teamwork and aim to develop team players in order
                     to exchange ideas, propel forward together and to align the
                     efforts with our partners.{" "}
@@ -65,15 +64,15 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                 </div>
               </div>
 
-              <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-                <div class="icon-box icon-box-blue">
-                  <div class="icon">
-                    <i class="bx bx-rocket"></i>
+              <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
+                <div className="icon-box icon-box-blue">
+                  <div className="icon">
+                    <i className="bx bx-rocket"></i>
                   </div>
-                  <h4 class="title">
-                    <a href>Leadership</a>
+                  <h4 className="title">
+                    <div>Leadership</div>
                   </h4>
-                  <p class="description">
+                  <p className="description">
                     We aim to develop future leaders with numerous fundamental
                     skills that will pave the way for their success.
                   </p>
@@ -93,7 +92,6 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
               <img
                 src="https://res.cloudinary.com/daihyew9d/image/upload/v1671369464/family-2_11zon_njetrf.jpg"
                 className="img-fluid aboutIMG"
-                alt
               />
             </div>
             <div className="col-md-7 pt-5 order-2 order-md-1  ">
@@ -129,7 +127,6 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
               <img
                 src="https://res.cloudinary.com/daihyew9d/image/upload/v1671401052/missionfamilywebsite_11zon_qaqljd.jpg"
                 className="img-fluid aboutIMG"
-                alt
               />
             </div>
             <div className="col-md-6   pt-5 ">
@@ -169,7 +166,6 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
               <img
                 src="https://res.cloudinary.com/daihyew9d/image/upload/v1671400935/green_11zon_zg0s7s.jpg"
                 className="img-fluid aboutIMG"
-                alt
               />
             </div>
             <div className="col-md-7 pt-5 order-2 order-md-1  ">
@@ -203,7 +199,6 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
               <img
                 src="https://res.cloudinary.com/daihyew9d/image/upload/v1671400838/events_11zon_s4idnb.jpg"
                 className="img-fluid aboutIMG"
-                alt
               />
             </div>
             <div className="col-md-6   pt-5 ">
@@ -240,7 +235,6 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
               <img
                 src="https://res.cloudinary.com/daihyew9d/image/upload/v1671366029/committee_11zon_isbsxt.jpg"
                 className="img-fluid aboutIMG"
-                alt
               />
             </div>
             <div className="col-md-7 pt-5 order-2 order-md-1  ">
@@ -273,7 +267,6 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
               <img
                 src="https://res.cloudinary.com/daihyew9d/image/upload/v1671371495/magazines_11zon_1_zjhimo.jpg"
                 className="img-fluid aboutIMG"
-                alt
               />
             </div>
             <div className="col-md-6   pt-5 ">
@@ -304,8 +297,8 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
       </section>
 
       <hr></hr>
-      <section class="breadcrumbs">
-        <div class="container board">
+      <section className="breadcrumbs">
+        <div className="container board">
           <h3>Our Executive Board</h3>
         </div>
       </section>
@@ -317,7 +310,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                 <div className="col-lg-3  ">
                   <div className="member">
                     <div className="member-img d-flex justify-content-center">
-                      <img src={member.src} className="img-fluid" alt />
+                      <img src={member.src} className="img-fluid" />
                       <div className="social">
                         <a href={member.accounts.facebook} target="_blank">
                           <i className="bi bi-facebook" />

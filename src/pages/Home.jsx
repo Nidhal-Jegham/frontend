@@ -33,7 +33,7 @@ const Home = ({ setLoading, loading }) => {
             <div className="col-xl-8">
               <h2>Tunisian International Model United Nations </h2>
               <h3>Tunis Business School</h3>
-              <a href onClick={LearnMore} className="btn-get-started ">
+              <a onClick={LearnMore} className="btn-get-started ">
                 Know More
               </a>
             </div>
