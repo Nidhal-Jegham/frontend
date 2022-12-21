@@ -38,8 +38,14 @@ const Footer = () => {
                   </div>{" "}
                   <div className="col-lg-2">
                     <img
-                      className="imageUNDP"
-                      src="https://res.cloudinary.com/daihyew9d/image/upload/v1671402141/UNDP-Logo-Blue-Large_1_oakic4.png"
+                      className="image"
+                      src="https://res.cloudinary.com/daihyew9d/image/upload/v1671654601/Logo_TIMUN_1__11zon_1_hnqyju_0f2a76.png"
+                    ></img>
+                  </div>{" "}
+                  <div className="col-lg-2">
+                    <img
+                      className="image"
+                      src="https://res.cloudinary.com/daihyew9d/image/upload/v1671652943/undp_logo_1_mgppzz.png"
                     ></img>
                   </div>{" "}
                   <div className="col-lg-2">
