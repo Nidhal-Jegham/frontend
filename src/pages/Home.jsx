@@ -12,7 +12,7 @@ const Home = ({ setLoading, loading }) => {
   };
   useEffect(() => {
     setLoading(false);
-    fetch(`${REACT_APP_API_URL}/home/teams`)
+    fetch(`${process.env.REACT_APP_API_URL}/home/teams`)
       .then((res) => res.json())
       .then((data) => {
         setTeam(data);

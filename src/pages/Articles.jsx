@@ -14,7 +14,7 @@ function Articles({ setLoading, loading }) {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`${REACT_APP_API_URL}/articles`)
+    fetch(`${process.env.REACT_APP_API_URL}/articles`)
       .then((res) => res.json())
       .then((data) => {
         setArticles(data);

@@ -56,7 +56,7 @@ function SGuides({ loading, setLoading }) {
     setEventName("");
     setLanguage("");
     setSGuidePage(1);
-    fetch(`${REACT_APP_API_URL}/sguides`)
+    fetch(`${process.env.REACT_APP_API_URL}/sguides`)
       .then((res) => res.json())
       .then((data) => {
         setSGuides(data);
@@ -64,7 +64,7 @@ function SGuides({ loading, setLoading }) {
         setLoading(false);
       })
       .catch((err) => console.log(err));
-    fetch(`${REACT_APP_API_URL}/events`)
+    fetch(`${process.env.REACT_APP_API_URL}/events`)
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);
