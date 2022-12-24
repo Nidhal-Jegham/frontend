@@ -41,9 +41,9 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                     <div>Innovation</div>
                   </h4>
                   <p className="description">
-                    We aim to develop a common sense on innovation in order to
-                    develop the critical and solution oriented mindsets of
-                    students.
+                    We believe that by promoting a mindset focused on
+                    innovation, we can empower our students to approach
+                    challenges with a proactive, solution-oriented attitude.
                   </p>
                 </div>
               </div>
@@ -57,9 +57,9 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                     <div>Cooperation</div>
                   </h4>
                   <p className="description">
-                    We value teamwork and aim to develop team players in order
-                    to exchange ideas, propel forward together and to align the
-                    efforts with our partners.{" "}
+                    we believe in the power of teamwork and strive to cultivate
+                    team players who can exchange ideas, collaborate, and work
+                    together towards common objectives.{" "}
                   </p>
                 </div>
               </div>
@@ -73,8 +73,8 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                     <div>Leadership</div>
                   </h4>
                   <p className="description">
-                    We aim to develop future leaders with numerous fundamental
-                    skills that will pave the way for their success.
+                    We aspire to develop future leaders with numerous
+                    fundamental skills that will pave the way for their success.
                   </p>
                 </div>
               </div>
@@ -177,7 +177,7 @@ const AboutUs = ({ loading, setLoading, team, about }) => {
                 </a>
               </div>
               <p className="fst-italic">
-                Instruct students about the various aspects of Diplomacy and
+                To instruct students about the various aspects of Diplomacy and
                 Geopolitics alongside maintaining a sense of solidarity and
                 peer-learning inside the entity.
               </p>
