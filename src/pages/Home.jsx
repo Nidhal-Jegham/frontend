@@ -12,7 +12,7 @@ const Home = ({ setLoading, loading }) => {
   };
   useEffect(() => {
     setLoading(false);
-    fetch("https://timunservices.onrender.com/home/teams")
+    fetch(`${REACT_APP_API_URL}/home/teams`)
       .then((res) => res.json())
       .then((data) => {
         setTeam(data);
