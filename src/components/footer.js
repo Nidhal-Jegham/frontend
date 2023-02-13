@@ -172,6 +172,11 @@ const Footer = () => {
             {" "}
             Wael Dghim
           </a>
+          <div className="credits">
+            <a href="https://www.timeanddate.com/countdown/to?iso=20230218T10&p0=253&msg=Find+them+behind+those+kingdoms%21&font=cursive">
+              1036
+            </a>
+          </div>
         </div>
       </div>
     </footer>
