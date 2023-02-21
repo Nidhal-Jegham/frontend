@@ -172,11 +172,6 @@ const Footer = () => {
             {" "}
             Wael Dghim
           </a>
-          <div className="credits">
-            <a href="https://docs.google.com/document/d/1vLVCmh9LQIbLNTE18pddBSKer9-5ZpqwIFlT1rfFAV4/edit?usp=sharing">
-              1036
-            </a>
-          </div>
         </div>
       </div>
     </footer>
