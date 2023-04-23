@@ -47,8 +47,8 @@ function Articles({ setLoading, loading }) {
         <h3>Our Articles</h3>
       </div>
 
-      <section className="Block">
-        <div className="container d-flex justify-content-center">
+      <section className="Block articles-details">
+        <div className="container d-flex justify-content-center ">
           <div className="row">
             {articles.map((article) => {
               const subjects = article.articles;
@@ -122,7 +122,7 @@ function Articles({ setLoading, loading }) {
               <div className="card">
                 <div className="card-img">
                   <img
-                    src="https://res.cloudinary.com/daihyew9d/image/upload/v1671365986/timun_magazine_oxhpbh.jpg"
+                    src="https://res.cloudinary.com/daihyew9d/image/upload/v1682270629/275382263_5163437040383226_8238815832647974340_n_qhquyn.jpg"
                     alt="..."
                   ></img>
                 </div>
