@@ -47,7 +47,7 @@ function Articles({ setLoading, loading }) {
         <h3>Our Articles</h3>
       </div>
 
-      <section className="Block ">
+      <section className="Block">
         <div className="container d-flex justify-content-center">
           <div className="row">
             {articles.map((article) => {
@@ -61,38 +61,26 @@ function Articles({ setLoading, loading }) {
                 />
               );
             })}
-            <div className="col-xl-12 magazine">
-              <article className="entry entry-single">
-                <div className="active entry-img"></div>
-                <h2 className="entry-title">
-                  <a
-                    href="https://drive.google.com/file/d/1iqwsO8wV_bikMZobngNHDYPUFGDJNno2/view?usp=sharing"
-                    target="_blank"
-                  >
-                    Las MUNAS: Diplomacy Against All Odds! Press Corps Report
-                  </a>
-                </h2>
-                <div className="entry-meta">
-                  <ul>
-                    <li className="d-flex align-items-center">
-                      <i className="bi bi-person" />
-                      <span>
-                        {" "}
-                        Las MUNAS: Diplomacy Against All Odds! Press Corps
-                      </span>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <i className="bi bi-clock" />{" "}
-                      <span>{"2022-08-22".toString().substring(0, 10)}</span>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <i className="bi bi-chat-dots" />{" "}
-                      <span>4{" article(s)"} </span>
-                    </li>
-                  </ul>
+
+            <div className="col-md-6 d-flex align-items-stretch">
+              <div className="card">
+                <div className="card-img">
+                  <img
+                    src="https://drive.google.com/uc?export=view&id=13WayWYJi_N2-z1x8Bk6TqBbVO35pVtCj"
+                    alt="..."
+                  ></img>
                 </div>
-                <div className="entry-content">
-                  <p className="Active">
+                <div className="card-body">
+                  <h5 className="card-title">
+                    <a
+                      href="https://drive.google.com/file/d/1iqwsO8wV_bikMZobngNHDYPUFGDJNno2/view?usp=sharing"
+                      target="_blank"
+                    >
+                      Las MUNAS: Diplomacy Against All Odds! Press Corps Report
+                    </a>
+                  </h5>
+                  <p className="card-text">
+                    {" "}
                     Unfortunately, due to the high temperature, the ice in the
                     northern route melted. So, here we are today in 2024, where
                     a meeting within the Crisis Committee takes place to discuss
@@ -103,48 +91,52 @@ function Articles({ setLoading, loading }) {
                     even if it cost them to declare war...
                   </p>
 
-                  <div className="read-more">
+                  <h6 className="card-text ">
                     {" "}
-                    <a
-                      href="https://drive.google.com/file/d/1iqwsO8wV_bikMZobngNHDYPUFGDJNno2/view?usp=sharing_"
-                      target="_blank"
-                    >
-                      Read More
-                    </a>
+                    <i className="bi bi-clock" /> {""}
+                    <span>{"2022-08-22".toString().substring(0, 10)}</span>
+                  </h6>
+
+                  <p className="card-text">
+                    <i className="bi bi-person" />{" "}
+                    <span>
+                      {" "}
+                      Las MUNAS: Diplomacy Against All Odds! Press Corps
+                    </span>
+                  </p>
+                  <div className="entry-content">
+                    <div className="read-more">
+                      <a
+                        href="https://drive.google.com/file/d/1iqwsO8wV_bikMZobngNHDYPUFGDJNno2/view?usp=sharing"
+                        target="_blank"
+                      >
+                        Read More
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </article>
+              </div>
             </div>
 
-            <div className="col-xl-12 magazine">
-              <article className="entry entry-single">
-                <div className="active entry-img"></div>
-                <h2 className="entry-title">
-                  <a
-                    href="https://drive.google.com/uc?export=view&id=1MsjYqR2SJ_UwcCPKrkkWFvyRCDIfNWDf"
-                    target="_blank"
-                  >
-                    TIMUN TBS Magazine First Edition
-                  </a>
-                </h2>
-                <div className="entry-meta">
-                  <ul>
-                    <li className="d-flex align-items-center">
-                      <i className="bi bi-person" />
-                      <span> TIMUN TBS Academics</span>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <i className="bi bi-clock" />{" "}
-                      <span>{"2021-05-08".toString().substring(0, 10)}</span>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <i className="bi bi-chat-dots" />{" "}
-                      <span>10{" article(s)"} </span>
-                    </li>
-                  </ul>
+            <div className="col-md-6 d-flex align-items-stretch">
+              <div className="card">
+                <div className="card-img">
+                  <img
+                    src="https://res.cloudinary.com/daihyew9d/image/upload/v1671365986/timun_magazine_oxhpbh.jpg"
+                    alt="..."
+                  ></img>
                 </div>
-                <div className="entry-content">
-                  <p className="Active">
+                <div className="card-body">
+                  <h5 className="card-title">
+                    <a
+                      href="https://drive.google.com/uc?export=view&id=1MsjYqR2SJ_UwcCPKrkkWFvyRCDIfNWDf"
+                      target="_blank"
+                    >
+                      TIMUN TBS Magazine First Edition
+                    </a>
+                  </h5>
+                  <p className="card-text">
+                    {" "}
                     Due to the COVID-19 wave, we all got -more or less- familiar
                     with the medicine development process. However, the still
                     ongoing rumors about this vaccine’s side effects, or the
@@ -157,17 +149,28 @@ function Articles({ setLoading, loading }) {
                     Palestinian people- and Israel in 1993...
                   </p>
 
-                  <div className="read-more">
+                  <h6 className="card-text ">
                     {" "}
-                    <a
-                      href="https://drive.google.com/uc?export=view&id=1MsjYqR2SJ_UwcCPKrkkWFvyRCDIfNWDf"
-                      target="_blank"
-                    >
-                      Read More
-                    </a>
+                    <i className="bi bi-clock" /> {""}
+                    <span>{"2021-05-08".toString().substring(0, 10)}</span>
+                  </h6>
+
+                  <p className="card-text">
+                    <i className="bi bi-person" />{" "}
+                    <span> TIMUN TBS Academics</span>
+                  </p>
+                  <div className="entry-content">
+                    <div className="read-more">
+                      <a
+                        href="https://drive.google.com/uc?export=view&id=1MsjYqR2SJ_UwcCPKrkkWFvyRCDIfNWDf"
+                        target="_blank"
+                      >
+                        Read More
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </article>
+              </div>
             </div>
           </div>
         </div>

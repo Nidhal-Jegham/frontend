@@ -13,41 +13,37 @@ const Article = ({ article, subjects }) => {
   };
 
   return (
-    <div className="col-xl-12 magazine">
-      <article className="entry">
-        <h2 className="entry-title">
-          <a href={article.content} target="_blank">
-            {article.title}
-          </a>
-        </h2>
-        <div className="entry-meta">
-          <ul>
-            <li className="d-flex align-items-center">
-              <i className="bi bi-person" />
-              <span> {article.author}</span>
-            </li>
-            <li className="d-flex align-items-center">
-              <i className="bi bi-clock" />{" "}
-              <span>{article.date.toString().substring(0, 10)}</span>
-            </li>
-            <li className="d-flex align-items-center">
-              <i className="bi bi-chat-dots" />{" "}
-              <span>
-                {" "}
-                {article.articles.length} {"article(s)"}{" "}
-              </span>
-            </li>
-          </ul>
+    <div className="col-md-6 d-flex align-items-stretch">
+      <div className="card">
+        <div className="card-img">
+          <img src={article.cover} alt="..."></img>
         </div>
-        <div className="entry-content">
-          <p>{article.description}</p>
-          <div className="read-more">
+        <div className="card-body">
+          <h5 className="card-title">
             <a href={article.content} target="_blank">
-              Read More
+              {article.title}
             </a>
+          </h5>
+          <p className="card-text">{article.description}</p>
+
+          <h6 className="card-text ">
+            {" "}
+            <i className="bi bi-clock" /> {""}
+            <span>{article.date.toString().substring(0, 10)}</span>
+          </h6>
+
+          <p className="card-text">
+            <i className="bi bi-person" /> <span>{article.author}</span>
+          </p>
+          <div className="entry-content">
+            <div className="read-more">
+              <a href={article.content} target="_blank">
+                Read More
+              </a>
+            </div>
           </div>
         </div>
-      </article>
+      </div>
     </div>
   );
 };

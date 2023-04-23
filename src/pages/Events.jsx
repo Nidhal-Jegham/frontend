@@ -16,7 +16,7 @@ function Events({ loading, setLoading }) {
   useEffect(() => {
     setSearchEvent("");
     setLoading(true);
-    fetch(`${process.env.REACT_APP_API_URL}/events`)
+    fetch(`https://timunbackend.onrender.com/events`)
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);
@@ -98,7 +98,7 @@ function Events({ loading, setLoading }) {
       </div>
       <div className="Event-title-after"></div>
       <section className="events-details">
-        <div className="container  d-flex justify-content-center">
+        <div className="container d-flex justify-content-center">
           {" "}
           <div className="row">
             {events

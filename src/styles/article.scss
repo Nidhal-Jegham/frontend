@@ -172,11 +172,11 @@ body {
 .magazine .entry .entry-content p {
   line-height: 24px;
 }
-.magazine .entry .entry-content .read-more {
+.entry-content .read-more {
   -moz-text-align-last: right;
   text-align-last: right;
 }
-.magazine .entry .entry-content .read-more button {
+.entry-content .read-more button {
   display: inline-block;
   background: rgba(20, 51, 90, 1);
   color: #fff;
@@ -185,10 +185,10 @@ body {
   font-size: 14px;
   border: none;
 }
-.magazine .entry .entry-content .read-more button:hover {
+.entry-content .read-more button:hover {
   background: rgb(37, 94, 165);
 }
-.magazine .entry .entry-content .read-more a {
+.entry-content .read-more a {
   display: inline-block;
   background: rgba(20, 51, 90, 1);
   color: #fff;
@@ -197,7 +197,7 @@ body {
   font-size: 14px;
   border: none;
 }
-.magazine .entry .entry-content .read-more a:hover {
+.entry-content .read-more a:hover {
   background: rgb(37, 94, 165);
 }
 .magazine {
@@ -373,5 +373,97 @@ body {
     p {
       font-size: 15px;
     }
+  }
+}
+.card {
+  border: 0;
+  padding: 0 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.card-img {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  overflow: hidden;
+  z-index: 9;
+  border-radius: 0;
+}
+.card-img img {
+  aspect-ratio: 16/9;
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.card-body {
+  width: calc(100% + 60px);
+
+  z-index: 10;
+  background: #fff;
+  max-width: 100%;
+  border-top: 4px solid #fff;
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -60px;
+  transition: 0.3s;
+}
+.card-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card-title a {
+  color: #1e4356;
+  transition: 0.3s;
+}
+.card-text {
+  color: #5e5e5e;
+  i {
+    color: rgba(20, 51, 90, 1);
+  }
+}
+.read-more {
+  margin-top: 0%;
+}
+.read-more a {
+  color: #777777;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  transition: 0.3s;
+}
+.read-more a:hover {
+  color: #08486b;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+.card:hover .card-body {
+  border-color: rgba(20, 51, 90, 1);
+}
+.card:hover .card-body .card-title a {
+  color: rgba(20, 51, 90, 1);
+}
+.learnMore {
+  a {
+    text-align: center;
+    width: 50%;
+
+    margin-top: 2%;
+    display: inline-block;
+    color: rgba(20, 51, 90, 1);
+    background: transparent;
+    padding: 6px 20px;
+    transition: 0.3s;
+    font-size: 14px;
+    border: 0.5px solid rgba(20, 51, 90, 1);
+  }
+  a:hover {
+    background: #77adca;
+    color: #fff;
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
   }
 }
