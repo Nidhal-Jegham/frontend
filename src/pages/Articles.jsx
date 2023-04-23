@@ -14,7 +14,7 @@ function Articles({ setLoading, loading }) {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`${process.env.REACT_APP_API_URL}/articles`)
+    fetch(`https://timunbackend.onrender.com/articles`)
       .then((res) => res.json())
       .then((data) => {
         setArticles(data);
@@ -50,6 +50,17 @@ function Articles({ setLoading, loading }) {
       <section className="Block ">
         <div className="container d-flex justify-content-center">
           <div className="row">
+            {articles.map((article) => {
+              const subjects = article.articles;
+              return (
+                <Article
+                  key={article._id}
+                  article={article}
+                  subjects={subjects}
+                  articleNames={article.articles}
+                />
+              );
+            })}
             <div className="col-xl-12 magazine">
               <article className="entry entry-single">
                 <div className="active entry-img"></div>
@@ -72,7 +83,7 @@ function Articles({ setLoading, loading }) {
                     </li>
                     <li className="d-flex align-items-center">
                       <i className="bi bi-clock" />{" "}
-                      <span>{"8/20/2022".toString().substring(0, 10)}</span>
+                      <span>{"2022-08-22".toString().substring(0, 10)}</span>
                     </li>
                     <li className="d-flex align-items-center">
                       <i className="bi bi-chat-dots" />{" "}
@@ -104,6 +115,7 @@ function Articles({ setLoading, loading }) {
                 </div>
               </article>
             </div>
+
             <div className="col-xl-12 magazine">
               <article className="entry entry-single">
                 <div className="active entry-img"></div>
@@ -123,7 +135,7 @@ function Articles({ setLoading, loading }) {
                     </li>
                     <li className="d-flex align-items-center">
                       <i className="bi bi-clock" />{" "}
-                      <span>{"5/8/2021".toString().substring(0, 10)}</span>
+                      <span>{"2021-05-08".toString().substring(0, 10)}</span>
                     </li>
                     <li className="d-flex align-items-center">
                       <i className="bi bi-chat-dots" />{" "}
@@ -157,17 +169,6 @@ function Articles({ setLoading, loading }) {
                 </div>
               </article>
             </div>
-            {articles.map((article) => {
-              const subjects = article.articles;
-              return (
-                <Article
-                  key={article._id}
-                  article={article}
-                  subjects={subjects}
-                  articleNames={article.articles}
-                />
-              );
-            })}
           </div>
         </div>
       </section>

@@ -13,15 +13,8 @@ const Article = ({ article, subjects }) => {
   };
 
   return (
-    <div ref={articleRef} className="col-xl-12 magazine">
-      <article className="entry entry-single">
-        <div className={clicked ? "active entry-img" : "inactive"}>
-          <img
-            src="https://cdn.cfr.org/sites/default/files/styles/full_width_xl/public/image/2020/12/arabspring_0.jpg.webp"
-            alt
-            className="img-fluid"
-          />{" "}
-        </div>
+    <div className="col-xl-12 magazine">
+      <article className="entry">
         <h2 className="entry-title">
           <a href={article.content} target="_blank">
             {article.title}
@@ -47,64 +40,11 @@ const Article = ({ article, subjects }) => {
           </ul>
         </div>
         <div className="entry-content">
-          <p className={clicked ? "inactive" : "Active"}>
-            {" "}
-            {article.description}
-          </p>
-          <p className={clicked ? "active" : "inactive"}>
-            <i>htrhjrtjrtjrtj</i>
-          </p>
-
-          <blockquote className={clicked ? "active" : "inactive"}>
-            <p>
-              The Arab world has experienced enormous developments in the recent
-              decade, propelling it to the top of the global news agenda. The
-              Arab Spring is the biggest event that has taken over its political
-              picture; a series of anti-government protests that extended
-              throughout several nations in the Arab world, beginning in Tunisia
-              and progressing to the rest of the countries
-            </p>
-          </blockquote>
-          <p className={clicked ? "active" : "inactive"}>
-            The Tunisian Revolution, commonly known as the “Jasmine Revolution,”
-            lasted 28 days full of demonstrations, contests, and rebellion
-            events. As every event has its drivers, the Tunisian Revolution was
-            the consequence of numerous accumulated issues that the citizens
-            have been dealing with for many decades. There were other elements,
-            including unemployment, food inflation, corruption, a lack of
-            political freedom, especially freedom of expression, and bad living
-            circumstances. However, dictatorship played a significant effect in
-            the development of these variables. It wasn’t simply that
-            individuals were forbidden from expressing their opinions
-            explicitly, but they were also harassed, humiliated, evicted from
-            their homes, and imprisoned for no apparent cause.
-          </p>
-          <div className={clicked ? "active mid-img" : "inactive"}>
-            <img
-              src="https://cdn.cfr.org/sites/default/files/styles/full_width_xl/public/image/2020/12/arabspring_0.jpg.webp"
-              alt
-              className="img-fluid"
-            />{" "}
-          </div>
-          <p className={clicked ? "active" : "inactive"}>
-            The Tunisian Revolution, commonly known as the “Jasmine Revolution,”
-            lasted 28 days full of demonstrations, contests, and rebellion
-            events. As every event has its drivers, the Tunisian Revolution was
-            the consequence of numerous accumulated issues that the citizens
-            have been dealing with for many decades. There were other elements,
-            including unemployment, food inflation, corruption, a lack of
-            political freedom, especially freedom of expression, and bad living
-            circumstances. However, dictatorship played a significant effect in
-            the development of these variables. It wasn’t simply that
-            individuals were forbidden from expressing their opinions
-            explicitly, but they were also harassed, humiliated, evicted from
-            their homes, and imprisoned for no apparent cause.
-          </p>
+          <p>{article.description}</p>
           <div className="read-more">
-            <button onClick={() => ReadMore()}>
-              {" "}
-              {clicked ? "Collapse" : "Read More"}
-            </button>
+            <a href={article.content} target="_blank">
+              Read More
+            </a>
           </div>
         </div>
       </article>
